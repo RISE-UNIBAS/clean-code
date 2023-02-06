@@ -1,0 +1,155 @@
+---
+title: "Clean Code Examples"
+author: "Anthea Alberto"
+date: "2023-02-17"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r echo = F, message = F}
+library(tidyverse)
+setwd("/Users/antheaalberto/switchdrive/Research and Infrastructure Support/Veranstaltungen/20230217_WWZ")
+```
+
+## Principles of clean code
+
+### Code for people, not machines
+
+"Always assume that others will read your source code." (Mayer, 2022, p.56)
+
+```{r}
+# Bad!
+xxx <- 10000
+yyy <- 0.1
+zzz <- 1:10
+
+for (iii in zzz) {
+  print(xxx*(1+yyy)^iii)
+}
+```
+
+While it does work (i.e. it produces a reasonable output) is difficult to understand what the code above does.
+
+```{r}
+# Better:
+investments <- 10000
+yearly_return <- 0.1
+years <- 1:10
+
+for (year in years) {
+  value <- investments*(1+yearly_return)^year
+  print(paste(year, value, sep = ": "))
+}
+```
+
+This is better! Giving the variables proper names makes the purpose of the code and its output easier to understand.
+
+### Use the right names
+
+This principle is similar to the one above -- it's a lot easier to make sense of code when variables, data frames and functions have descriptive names. To use an example from *The Art of Clean Code*, say you want to program a currency converter. The code in the chunk below is taken from [StackOverflow](https://stackoverflow.com/questions/61395512/function-to-convert-from-one-currency-to-another-currency-in-r) (slightly amended to reflect conversion rates on Jan 3rd, 2023 and include CHF).
+
+```{r}
+
+currencyCon <- function(x, from = "USD", to = "EUR"){
+  # assign values: 1 usd in each currency 
+  values <- c(1.000000, 0.945799, 0.831797, 130.411928, 0.934267)
+  # names attribute 
+  names(values) <- c("USD", "EUR", "GBP", "YEN", "CHF")
+  # calculate (convert from into USD, and divide to)
+  values[to] / (values[from] / x)
+}
+
+```
+
+```{r}
+# Testing 
+currencyCon(1, "USD", "EUR")
+currencyCon(1, "EUR", "EUR")
+currencyCon(1, "GBP", "YEN")
+currencyCon(100, "CHF", "USD")
+```
+
+*currencyCon* is a more meaningful name than just con() or fun() or something along those lines, because it concisely describes what the function does.\
+Now let's say you want a simpler function that transforms USD to EUR. The way it is done in the chunk below works, but is not ideal
+
+```{r}
+
+dollar_to_euro <- function(x){
+  x*0.945799
+}
+```
+
+First, the name is not unambiguous: *dollar* will likely be associated with USD in most of the world, but Canadians, Australians and people in Hong Kong among others also use a currency called dollar, which makes the name problematic. It's better to use something like usd_to_eur().\
+Furthermore, it's discouraged to use numbers in functions, but rather define things like conversion rates beforehand. This will make changing it later easier, because you won't have to go through the entire function to find the number to adjust.
+
+```{r}
+conv_rate <- 0.945799
+
+usd_to_euro <- function(x){
+  x*conv_rate
+}
+
+usd_to_euro(1)
+```
+
+*conv_rate* is not exactly unambiguous, so the chunk above could be improved further still.
+
+### Adhere to standards and be consistent
+
+If you go back to the code chunks above, you'll notice some inconsistencies in terms of naming conventions. In particular, the conversion function from StackOverflow uses a capital C to distinguish the two words from each other (*currency* and *Con*), whereas in the other chunks I've primarily used underscores for variable and function names. This is not ideal, since it is *inconsistent*.\
+Different people prefer different labelling conventions, but you should aim to be consistent with what you use and don't mix styles. Here are some examples:\
+\* Use capital letters to distinguish words (e.g. UsdToEur(), currencyCon()) \* Use underscores (e.g. usd_to_eur(), currency_con()) \* Either use numbers directly or spell them out (e.g. var1 OR var_one) \* Avoid mixing styles, e.g. currency_Con(), it will just make your life harder
+
+### Use comments (& avoid unnecessary comments)
+
+```{r}
+text <- c("Ha! let me see her; out, alas! She's cold:
+          Her blood is settled, and her joints are stiff,
+          Life and these lips have long been separated:
+          Death lies on her like an untimely frost
+          Upon the sweetest flower of all the field.")
+
+```
+
+Look at the code below. While running it will tell you immediately what it does, it's hard to understand if you're not very familiar with [regular expressions](https://www.regular-expressions.info/).
+
+```{r eval = FALSE}
+f_words <- str_extract_all(text, "\\bf\\w+\\b")
+
+l_words <- str_extract_all(text, "\\bl\\w+\\b")
+```
+
+This is a situation where comments briefly outlining what each line does come in handy. Comments not only make it easier to understand code someone else wrote, but it can also help you getting back into an old script of yours.
+
+```{r}
+# Find all words starting with letter 'f'
+f_words <- str_extract_all(text, "\\bf\\w+\\b")
+f_words
+
+# Find all words starting with letter 'l'
+l_words <- str_extract_all(text, "\\bl\\w+\\b")
+l_words
+```
+
+Comments are a useful tool for the readability of scripts. There is such a thing as excessive commenting, however. Unless you are using a script for teaching purposes, you best refrain from explaining every single line. Let's go back to the investment example and add some unnecessary comments.
+
+```{r}
+investments <- 10000 # Your investments, change if needed
+yearly_return <- 0.1 # Annual return (e.g., 0.1 --> 10%)
+years <- 1:10 # Number of years to compound
+
+# Go over each year
+for (year in years) {
+  # Calculate value of your investment in current year
+  value <- investments*(1+yearly_return)^year
+  # Print year and value of investment
+  print(paste(year, value, sep = ": "))
+}
+```
+
+Because some thought was put into how to name the variables, the comments are quite superfluous and only add clutter to the code. 
+
+## Bibliography
+
+Mayer, C. (2022): The Art of Clean Code. San Francisco: No Starch Press, Inc.
