@@ -97,9 +97,14 @@ usd_to_euro(1)
 
 ### Adhere to standards and be consistent
 
-If you go back to the code chunks above, you'll notice some inconsistencies in terms of naming conventions. In particular, the conversion function from StackOverflow uses a capital C to distinguish the two words from each other (*currency* and *Con*), whereas in the other chunks I've primarily used underscores for variable and function names. This is not ideal, since it is *inconsistent*.\
-Different people prefer different labelling conventions, but you should aim to be consistent with what you use and don't mix styles. Here are some examples:\
-\* Use capital letters to distinguish words (e.g. UsdToEur(), currencyCon()) \* Use underscores (e.g. usd_to_eur(), currency_con()) \* Either use numbers directly or spell them out (e.g. var1 OR var_one) \* Avoid mixing styles, e.g. currency_Con(), it will just make your life harder
+If you go back to the code chunks above, you'll notice some inconsistencies in terms of naming conventions. In particular, the conversion function from StackOverflow uses a capital C to distinguish the two words from each other (*currency* and *Con*), whereas in the other chunks I've primarily used underscores for variable and function names. This is not ideal, since it is *inconsistent*.
+
+Different people prefer different labelling conventions, but you should aim to be consistent with what you use and don't mix styles. Here are some examples:
+
+-   Use capital letters to distinguish words (e.g. UsdToEur(), currencyCon())
+-   Use underscores (e.g. usd_to_eur(), currency_con())
+-   Either use numbers directly or spell them out (e.g. var1 OR var_one)
+-   Avoid mixing styles, e.g. currency_Con(), it will just make your life harder
 
 ### Use comments (& avoid unnecessary comments)
 
@@ -194,7 +199,7 @@ distance <- miles_to_km(20)
 print(distance)
 ```
 
-Not only is the repetition gone, but the code is easier to maintain this way. Should you wish to update e.g. a conversion rate Unlikely for miles to km, more likely for currencies etc.) it only needs to be done once, within the function, and not every time you perform a conversion.  
+Not only is the repetition gone, but the code is easier to maintain this way. Should you wish to update e.g. a conversion rate Unlikely for miles to km, more likely for currencies etc.) it only needs to be done once, within the function, and not every time you perform a conversion.\
 Alternatively, you can define the conversion rate beforehand, like we did earlier. Either way, you'll only have to change the rate once, which reduces the potential for errors.
 
 ## Bibliography
