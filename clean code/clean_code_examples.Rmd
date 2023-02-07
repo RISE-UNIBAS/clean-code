@@ -71,7 +71,7 @@ currencyCon(100, "CHF", "USD")
 ```
 
 *currencyCon* is a more meaningful name than just con() or fun() or something along those lines, because it concisely describes what the function does.\
-Now let's say you want a simpler function that transforms USD to EUR. The way it is done in the chunk below works, but is not ideal
+Now let's say you want a simpler function that transforms USD to EUR. The way it is done in the chunk below works, but is not ideal:
 
 ```{r}
 
@@ -81,7 +81,7 @@ dollar_to_euro <- function(x){
 ```
 
 First, the name is not unambiguous: *dollar* will likely be associated with USD in most of the world, but Canadians, Australians and people in Hong Kong among others also use a currency called dollar, which makes the name problematic. It's better to use something like usd_to_eur().\
-Furthermore, it's discouraged to use numbers in functions, but rather define things like conversion rates beforehand. This will make changing it later easier, because you won't have to go through the entire function to find the number to adjust.
+Furthermore, it's discouraged to use numbers in functions, but rather define things like conversion rates beforehand. This will make changing it later easier, because you won't have to go through the entire function to find the number to adjust. For small functions like this one, it does not make much of a difference, however.
 
 ```{r}
 conv_rate <- 0.945799
@@ -148,7 +148,54 @@ for (year in years) {
 }
 ```
 
-Because some thought was put into how to name the variables, the comments are quite superfluous and only add clutter to the code. 
+Because some thought was put into how to name the variables, the comments are quite superfluous and only add clutter to the code.
+
+### Don't repeat yourself (DRY)
+
+```{r}
+print("Hello, world!")
+print("Hello, world!")
+print("Hello, world!")
+print("Hello, world!")
+print("Hello, world!")
+```
+
+```{r}
+for (i in 1:5) {
+print("Hello, world!")  
+}
+```
+
+The two code chunks above do the same thing, but the second one avoids unnecessary clutter. In general, I recommend using loops or the apply()-family of functions to perform a task repeatedly.
+
+Another useful tool to avoid repeating yourself are *functions*. In the code chunk below, the same multiplication by 1.60934 is used twice.
+
+```{r}
+miles = 100
+kilometers = miles * 1.60934
+
+distance = 20 * 1.60934
+
+print(kilometers)
+print(distance)
+```
+
+Let's write a function, which will get rid of the repetition and is easier to maintain.
+
+```{r}
+miles_to_km <- function(miles){
+  return(miles*1.60934)
+}
+
+miles = 100
+miles_to_km(100)
+
+distance <- miles_to_km(20)
+print(distance)
+```
+
+Not only is the repetition gone, but the code is easier to maintain this way. Should you wish to update e.g. a conversion rate Unlikely for miles to km, more likely for currencies etc.) it only needs to be done once, within the function, and not every time you perform a conversion.  
+Alternatively, you can define the conversion rate beforehand, like we did earlier. Either way, you'll only have to change the rate once, which reduces the potential for errors.
 
 ## Bibliography
 
