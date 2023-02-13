@@ -10,15 +10,15 @@ This dataset was created by the University of Basel's Research and Infrastructur
 
 Note that there are [different versions of this dataset](https://github.com/RISE-UNIBAS/clean-code/releases).
 
-- slides on Git: [git.md](https://github.com/RISE-UNIBAS/clean-code/tree/master/git.md)
-- all images used in [/images](https://github.com/RISE-UNIBAS/clean-code/tree/master/images)
+The file structure mirrors the outline of the course:
 
-Pandoc was used to create HTML slides: `pandoc -s --webtex -i -t slidy in_file.md -o out_file.html`
+- Introduction in [`clean-code/intro`](https://github.com/RISE-UNIBAS/clean-code/tree/master/intro)
+- Version control with Git in [`clean-code/git`](https://github.com/RISE-UNIBAS/clean-code/tree/master/git)
+- Materials on documentation in [`clean-code/git`](https://github.com/RISE-UNIBAS/clean-code/tree/master/docs)
+- Materials on clean code in [`clean-code/git`](https://github.com/RISE-UNIBAS/clean-code/tree/master/clean)
 
 ## To dos
 
-- add slides for documentation
-- transfer training materials from Switch
 - Turn repo public when ready.
 
 ## License

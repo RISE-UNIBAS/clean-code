@@ -1,5 +1,5 @@
 ---
-title: Git in 15 minutes
+title: Brief introduction to Git
 author: Dr. Maximilian Hindermann
 institute: RISE and UB
 theme: Metropolis
@@ -22,7 +22,7 @@ Get you in a position to decide if Git might be useful for your work.
     - a JSON-LD file containing a Tropy database
     - an SVG file of a research project's fancy new logo
     - a TXT file containing a novel from Project Gutenberg
-- Git is less well suited for binary data such as audio data, images or video (changes in these files are opaque).
+- Git is less well suited for binary data such as audio data, images or video (changes in these files are opaque), especially if these files are large (>100MB); use [Git Large File Storage extension ](https://git-lfs.com/)in such cases.
 
 # Local version control
 
@@ -71,13 +71,17 @@ There are several GitLab instances at Unibas but none run as official university
 - https://gitlab.switch.ch/ub-unibas/
 - https://gitlab.its.unibas.ch/
 
-If there are instances missing please get in touch!
+If you know of instances not listed here please get in touch!
+
+# c4science
+
+bla
 
 # Looking at a sample GitHub repository
 
 ![](images/inception.png "Alex Eylar, 'Inception', CC BY-NA-SA 2.0")
 
-GitHub repo for these slides: [github.com/MHindermann/slides](https://github.com/MHindermann/slides)
+GitHub repo for these slides: [https://github.com/RISE-UNIBAS/clean-code/git](https://github.com/RISE-UNIBAS/clean-code/tree/master/git)
 
 Image credits: [Alex Eylar, "Inception", CC BY-NA-SA 2.0](https://www.flickr.com/photos/hoyvinmayvin/4829301976).
 
