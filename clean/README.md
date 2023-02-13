@@ -1,0 +1,1 @@
+The folder [`clean-code/clean`](https://github.com/RISE-UNIBAS/clean-code/tree/master/clean) contains:
