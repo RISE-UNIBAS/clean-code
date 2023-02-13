@@ -6,7 +6,7 @@ theme: Metropolis
 date: February 17, 2023
 ---
 
-# Today's Goal
+# Today's goal
 
 ![](images/git.png "'An expressive oil painting of a programmer failing to use Git' by Maximilian Hindermann and DALLE-2")
 
@@ -92,10 +92,3 @@ Image credits: [Alex Eylar, "Inception", CC BY-NA-SA 2.0](https://www.flickr.com
 - [Tons of material online and in print](https://git-scm.com/doc/ext)
 - [Scott Chacon and Ben Straub (2014): Pro Git, Apress](https://git-scm.com/book/en/v2)
 - Bernd Öggl and Michael Kofler (2022): Git. Projektverwaltung für Entwickler und DevOps-Teams, Rheinwerk Computing
-
-# Contact
-
-![](images/rise.jpg "The RISE team")
-
-- Email: rise@unibas.ch 
-- Github: https://github.com/RISE-UNIBAS
