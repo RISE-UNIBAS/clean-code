@@ -1,12 +1,12 @@
 ---
-title: Brief introduction to Git
+title: Brief introduction to version control with Git
 author: Dr. Maximilian Hindermann
 institute: RISE and UB
 theme: Metropolis
 date: February 17, 2023
 ---
 
-# Today's goal
+# This section's goal
 
 ![](images/git.png "'An expressive oil painting of a programmer failing to use Git' by Maximilian Hindermann and DALLE-2")
 
@@ -71,11 +71,12 @@ There are several GitLab instances at Unibas but none run as official university
 - https://gitlab.switch.ch/ub-unibas/
 - https://gitlab.its.unibas.ch/
 
-If you know of instances not listed here please get in touch!
+# National infrastructure
 
-# c4science
+Switch offers a GitLab instance, c4science supports Git:
 
-bla
+- https://gitlab.switch.ch/
+- https://c4science.ch/
 
 # Looking at a sample GitHub repository
 
