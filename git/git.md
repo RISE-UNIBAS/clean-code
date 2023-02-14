@@ -8,7 +8,7 @@ date: February 17, 2023
 
 # This section's goal
 
-![](images/git.png "'An expressive oil painting of a programmer failing to use Git' by Maximilian Hindermann and DALLE-2")
+![](images/title_image.png "'An expressive oil painting of a programmer failing to use Git' by Maximilian Hindermann and DALLE-2")
 
 Get you in a position to decide if Git might be useful for your work.
 
@@ -66,17 +66,17 @@ In contrast to GitHub, GitLab can be installed on your own infrastructure (e.g.,
 
 There are several GitLab instances at Unibas but none run as official university-wide service:
 
-- https://git.scicore.unibas.ch/
-- https://gitlab.psychologie.unibas.ch/
-- https://gitlab.switch.ch/ub-unibas/
-- https://gitlab.its.unibas.ch/
+- [https://git.scicore.unibas.ch/](https://git.scicore.unibas.ch/)
+- [https://gitlab.psychologie.unibas.ch/](https://gitlab.psychologie.unibas.ch/)
+- [https://gitlab.switch.ch/ub-unibas/](https://gitlab.switch.ch/ub-unibas/)
+- [https://gitlab.its.unibas.ch/](https://gitlab.its.unibas.ch/)
 
 # National infrastructure
 
 Switch offers a GitLab instance, c4science supports Git:
 
-- https://gitlab.switch.ch/
-- https://c4science.ch/
+- [https://gitlab.switch.ch/](https://gitlab.switch.ch/)
+- [https://c4science.ch/](https://c4science.ch/)
 
 # Looking at a sample GitHub repository
 

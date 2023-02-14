@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Dr. Maximilian Hindermann" />
+  <meta name="date" content="2023-02-17" />
+  <title>Documentation</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Documentation</h1>
+  <p class="author">
+Dr. Maximilian Hindermann
+  </p>
+  <p class="institute">
+RISE and UB
+  </p>
+  <p class="date">February 17, 2023</p>
+</div>
+<div id="goal-of-this-section-on-documentation"
+class="slide section level1">
+<h1>Goal of this section on documentation</h1>
+<p><img src="images/title_image.png"
+title="&#39;An oil painting of a programmer cleaning code&#39; by Maximilian Hindermann and DALLE-2" /></p>
+<p>Get you in a position to start writing great documentation.</p>
+</div>
+<div id="why-is-documentation-important" class="slide section level1">
+<h1>Why is documentation important?</h1>
+<p>Without documentation your future self (let alone other people) won’t
+be able to easily read your code and your code won’t be FAIR. Apart from
+the time and money spent (re)understanding your code, this potentially
+means many missed out opportunities, including:</p>
+<ul class="incremental">
+<li>Publications (results not reproducible or black boxed)</li>
+<li>Collaboration</li>
+<li>Funding</li>
+</ul>
+</div>
+<div id="high-level-view" class="slide section level1">
+<h1>High-level view</h1>
+<p>“IEEE Standard for Software User Documentation” in IEEE Std
+1063-1987: 1-20, <a
+href="10.1109/IEEESTD.1988.121943">10.1109/IEEESTD.1988.121943</a>.</p>
+<p>In order to create good user software documentation, answer the
+following questions:</p>
+<ol class="incremental" style="list-style-type: decimal">
+<li>What part(s) of the software need to be documented?</li>
+<li>Who is the audience of the documentation?</li>
+<li>What is the information required by the target audience?</li>
+<li>What is the usage mode of the documentation?</li>
+</ol>
+</div>
+<div id="example-in-python-implementation-side-if-you-will"
+class="slide section level1">
+<h1>Example in Python (implementation side if you will)</h1>
+<ul class="incremental">
+<li>documenting versus commenting</li>
+<li>docstrings</li>
+<li>hints/annotations</li>
+<li>documentation with sphinx</li>
+<li>readme</li>
+<li>file structure</li>
+</ul>
+</div>
+<div id="test" class="slide section level1">
+<h1>test</h1>
+<pre><code>class Client:
+    &quot;&quot;&quot; Standalone client.
+    :param gold_standard: the gold standard, defaults to None
+    :param model_dir: the directory of the custom NER model, defaults to None
+    :param model: the loaded custom NER model, defaults to None
+    &quot;&quot;&quot;
+
+    def __init__(self,
+                 gold_standard: GoldStandard = None,
+                 model_dir: TemporaryDirectory = None,
+                 model: Language = None,
+                 input_text: DataFrame = None,
+                 result: DataFrame = None,
+                 ) -&gt; None:
+        self.gold_standard = gold_standard
+        self.model_dir = model_dir
+        self.model = model
+        self.input_text = input_text
+        self.result = result
+        self.setup()</code></pre>
+</div>
+<div id="further-reading" class="slide section level1">
+<h1>Further reading</h1>
+</div>
+</body>
+</html>

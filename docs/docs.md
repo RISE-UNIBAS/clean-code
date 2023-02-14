@@ -8,7 +8,7 @@ date: February 17, 2023
 
 # Goal of this section on documentation
 
-![](images/git.png "'An expressive oil painting of a programmer failing to use Git' by Maximilian Hindermann and DALLE-2")
+![](images/title_image.png "'An oil painting of a programmer cleaning code' by Maximilian Hindermann and DALLE-2")
 
 Get you in a position to start writing great documentation.
 
@@ -23,7 +23,7 @@ Without documentation your future self (let alone other people) won't be able to
 
 # High-level view
 
-"IEEE Standard for Software User Documentation," in IEEE Std 1063-1987: 1-20, [10.1109/IEEESTD.1988.121943](10.1109/IEEESTD.1988.121943).
+"IEEE Standard for Software User Documentation" in IEEE Std 1063-1987: 1-20, [10.1109/IEEESTD.1988.121943](10.1109/IEEESTD.1988.121943).
 
 In order to create good user software documentation, answer the following questions:
 
