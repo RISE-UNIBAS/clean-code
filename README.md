@@ -12,10 +12,10 @@ Note that there are [different versions of this dataset](https://github.com/RISE
 
 The file structure mirrors the outline of the course:
 
-- Introduction in [`clean-code/intro`](https://github.com/RISE-UNIBAS/clean-code/tree/master/intro)
-- Version control with Git in [`clean-code/git`](https://github.com/RISE-UNIBAS/clean-code/tree/master/git)
-- Materials on documentation in [`clean-code/git`](https://github.com/RISE-UNIBAS/clean-code/tree/master/docs)
-- Materials on clean code in [`clean-code/git`](https://github.com/RISE-UNIBAS/clean-code/tree/master/clean)
+- Introduction in [`clean-code/intro`](https://github.com/RISE-UNIBAS/clean-code/tree/main/intro)
+- Version control with Git in [`clean-code/git`](https://github.com/RISE-UNIBAS/clean-code/tree/main/git)
+- Materials on documentation in [`clean-code/git`](https://github.com/RISE-UNIBAS/clean-code/tree/main/docs)
+- Materials on clean code in [`clean-code/git`](https://github.com/RISE-UNIBAS/clean-code/tree/main/clean)
 
 ## To dos
 
