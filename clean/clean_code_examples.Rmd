@@ -3,8 +3,8 @@ title: "Clean Code Examples"
 author: "Anthea Alberto"
 date: "2023-02-17"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r echo = F, message = F}
@@ -171,7 +171,7 @@ print("Hello, world!")
 }
 ```
 
-The two code chunks above do the same thing, but the second one avoids unnecessary clutter. In general, I recommend using loops or the apply()-family of functions to perform a task repeatedly.
+The code chunks above do the same thing, but the last one avoids unnecessary clutter. In general, I recommend using loops or the apply()-family of functions to perform a task repeatedly.
 
 Another useful tool to avoid repeating yourself are *functions*. In the code chunk below, the same multiplication by 1.60934 is used twice.
 
