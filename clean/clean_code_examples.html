@@ -11,7 +11,7 @@
 
 <meta name="author" content="Anthea Alberto" />
 
-<meta name="date" content="2023-01-02" />
+<meta name="date" content="2023-02-17" />
 
 <title>Clean Code Examples</title>
 
@@ -352,7 +352,7 @@ display: none;
 
 <h1 class="title toc-ignore">Clean Code Examples</h1>
 <h4 class="author">Anthea Alberto</h4>
-<h4 class="date">2023-01-02</h4>
+<h4 class="date">2023-02-17</h4>
 
 </div>
 
@@ -381,26 +381,27 @@ for (iii in zzz) {
 ## [1] 21435.89
 ## [1] 23579.48
 ## [1] 25937.42</code></pre>
-<p>While it does work (i.e. it produces a resonable output) is difficult
-to understand what the code above does.</p>
+<p>While it does work (i.e. it produces a reasonable output) is
+difficult to understand what the code above does.</p>
 <pre class="r"><code># Better:
-investements &lt;- 10000
+investments &lt;- 10000
 yearly_return &lt;- 0.1
 years &lt;- 1:10
 
 for (year in years) {
-  print(investements*(1+yearly_return)^year)
+  value &lt;- investments*(1+yearly_return)^year
+  print(paste(year, value, sep = &quot;: &quot;))
 }</code></pre>
-<pre><code>## [1] 11000
-## [1] 12100
-## [1] 13310
-## [1] 14641
-## [1] 16105.1
-## [1] 17715.61
-## [1] 19487.17
-## [1] 21435.89
-## [1] 23579.48
-## [1] 25937.42</code></pre>
+<pre><code>## [1] &quot;1: 11000&quot;
+## [1] &quot;2: 12100&quot;
+## [1] &quot;3: 13310&quot;
+## [1] &quot;4: 14641&quot;
+## [1] &quot;5: 16105.1&quot;
+## [1] &quot;6: 17715.61&quot;
+## [1] &quot;7: 19487.171&quot;
+## [1] &quot;8: 21435.8881&quot;
+## [1] &quot;9: 23579.47691&quot;
+## [1] &quot;10: 25937.424601&quot;</code></pre>
 <p>This is better! Giving the variables proper names makes the purpose
 of the code and its output easier to understand.</p>
 </div>
@@ -438,7 +439,7 @@ currencyCon(1, &quot;USD&quot;, &quot;EUR&quot;)</code></pre>
 fun() or something along those lines, because it concisely describes
 what the function does.<br />
 Now let’s say you want a simpler function that transforms USD to EUR.
-The way it is done in the chunk below works, but is not ideal</p>
+The way it is done in the chunk below works, but is not ideal:</p>
 <pre class="r"><code>dollar_to_euro &lt;- function(x){
   x*0.945799
 }</code></pre>
@@ -450,7 +451,8 @@ usd_to_eur().<br />
 Furthermore, it’s discouraged to use numbers in functions, but rather
 define things like conversion rates beforehand. This will make changing
 it later easier, because you won’t have to go through the entire
-function to find the number to adjust.</p>
+function to find the number to adjust. For small functions like this
+one, it does not make much of a difference, however.</p>
 <pre class="r"><code>conv_rate &lt;- 0.945799
 
 usd_to_euro &lt;- function(x){
@@ -462,6 +464,146 @@ usd_to_euro(1)</code></pre>
 <p><em>conv_rate</em> is not exactly unambiguous, so the chunk above
 could be improved further still.</p>
 </div>
+<div id="adhere-to-standards-and-be-consistent" class="section level3">
+<h3>Adhere to standards and be consistent</h3>
+<p>If you go back to the code chunks above, you’ll notice some
+inconsistencies in terms of naming conventions. In particular, the
+conversion function from StackOverflow uses a capital C to distinguish
+the two words from each other (<em>currency</em> and <em>Con</em>),
+whereas in the other chunks I’ve primarily used underscores for variable
+and function names. This is not ideal, since it is
+<em>inconsistent</em>.</p>
+<p>Different people prefer different labelling conventions, but you
+should aim to be consistent with what you use and don’t mix styles. Here
+are some examples:</p>
+<ul>
+<li>Use capital letters to distinguish words (e.g. UsdToEur(),
+currencyCon())</li>
+<li>Use underscores (e.g. usd_to_eur(), currency_con())</li>
+<li>Either use numbers directly or spell them out (e.g. var1 OR
+var_one)</li>
+<li>Avoid mixing styles, e.g. currency_Con(), it will just make your
+life harder</li>
+</ul>
+</div>
+<div id="use-comments-avoid-unnecessary-comments" class="section level3">
+<h3>Use comments (&amp; avoid unnecessary comments)</h3>
+<pre class="r"><code>text &lt;- c(&quot;Ha! let me see her; out, alas! She&#39;s cold:
+          Her blood is settled, and her joints are stiff,
+          Life and these lips have long been separated:
+          Death lies on her like an untimely frost
+          Upon the sweetest flower of all the field.&quot;)</code></pre>
+<p>Look at the code below. While running it will tell you immediately
+what it does, it’s hard to understand if you’re not very familiar with
+<a href="https://www.regular-expressions.info/">regular
+expressions</a>.</p>
+<pre class="r"><code>f_words &lt;- str_extract_all(text, &quot;\\bf\\w+\\b&quot;)
+
+l_words &lt;- str_extract_all(text, &quot;\\bl\\w+\\b&quot;)</code></pre>
+<p>This is a situation where comments briefly outlining what each line
+does come in handy. Comments not only make it easier to understand code
+someone else wrote, but it can also help you getting back into an old
+script of yours.</p>
+<pre class="r"><code># Find all words starting with letter &#39;f&#39;
+f_words &lt;- str_extract_all(text, &quot;\\bf\\w+\\b&quot;)
+f_words</code></pre>
+<pre><code>## [[1]]
+## [1] &quot;frost&quot;  &quot;flower&quot; &quot;field&quot;</code></pre>
+<pre class="r"><code># Find all words starting with letter &#39;l&#39;
+l_words &lt;- str_extract_all(text, &quot;\\bl\\w+\\b&quot;)
+l_words</code></pre>
+<pre><code>## [[1]]
+## [1] &quot;let&quot;  &quot;lips&quot; &quot;long&quot; &quot;lies&quot; &quot;like&quot;</code></pre>
+<p>Comments are a useful tool for the readability of scripts. There is
+such a thing as excessive commenting, however. Unless you are using a
+script for teaching purposes, you best refrain from explaining every
+single line. Let’s go back to the investment example and add some
+unnecessary comments.</p>
+<pre class="r"><code>investments &lt;- 10000 # Your investments, change if needed
+yearly_return &lt;- 0.1 # Annual return (e.g., 0.1 --&gt; 10%)
+years &lt;- 1:10 # Number of years to compound
+
+# Go over each year
+for (year in years) {
+  # Calculate value of your investment in current year
+  value &lt;- investments*(1+yearly_return)^year
+  # Print year and value of investment
+  print(paste(year, value, sep = &quot;: &quot;))
+}</code></pre>
+<pre><code>## [1] &quot;1: 11000&quot;
+## [1] &quot;2: 12100&quot;
+## [1] &quot;3: 13310&quot;
+## [1] &quot;4: 14641&quot;
+## [1] &quot;5: 16105.1&quot;
+## [1] &quot;6: 17715.61&quot;
+## [1] &quot;7: 19487.171&quot;
+## [1] &quot;8: 21435.8881&quot;
+## [1] &quot;9: 23579.47691&quot;
+## [1] &quot;10: 25937.424601&quot;</code></pre>
+<p>Because some thought was put into how to name the variables, the
+comments are quite superfluous and only add clutter to the code.</p>
+</div>
+<div id="dont-repeat-yourself-dry" class="section level3">
+<h3>Don’t repeat yourself (DRY)</h3>
+<pre class="r"><code>print(&quot;Hello, world!&quot;)</code></pre>
+<pre><code>## [1] &quot;Hello, world!&quot;</code></pre>
+<pre class="r"><code>print(&quot;Hello, world!&quot;)</code></pre>
+<pre><code>## [1] &quot;Hello, world!&quot;</code></pre>
+<pre class="r"><code>print(&quot;Hello, world!&quot;)</code></pre>
+<pre><code>## [1] &quot;Hello, world!&quot;</code></pre>
+<pre class="r"><code>print(&quot;Hello, world!&quot;)</code></pre>
+<pre><code>## [1] &quot;Hello, world!&quot;</code></pre>
+<pre class="r"><code>print(&quot;Hello, world!&quot;)</code></pre>
+<pre><code>## [1] &quot;Hello, world!&quot;</code></pre>
+<pre class="r"><code>for (i in 1:5) {
+print(&quot;Hello, world!&quot;)  
+}</code></pre>
+<pre><code>## [1] &quot;Hello, world!&quot;
+## [1] &quot;Hello, world!&quot;
+## [1] &quot;Hello, world!&quot;
+## [1] &quot;Hello, world!&quot;
+## [1] &quot;Hello, world!&quot;</code></pre>
+<p>The code chunks above do the same thing, but the last one avoids
+unnecessary clutter. In general, I recommend using loops or the
+apply()-family of functions to perform a task repeatedly.</p>
+<p>Another useful tool to avoid repeating yourself are
+<em>functions</em>. In the code chunk below, the same multiplication by
+1.60934 is used twice.</p>
+<pre class="r"><code>miles = 100
+kilometers = miles * 1.60934
+
+distance = 20 * 1.60934
+
+print(kilometers)</code></pre>
+<pre><code>## [1] 160.934</code></pre>
+<pre class="r"><code>print(distance)</code></pre>
+<pre><code>## [1] 32.1868</code></pre>
+<p>Let’s write a function, which will get rid of the repetition and is
+easier to maintain.</p>
+<pre class="r"><code>miles_to_km &lt;- function(miles){
+  return(miles*1.60934)
+}
+
+miles = 100
+miles_to_km(100)</code></pre>
+<pre><code>## [1] 160.934</code></pre>
+<pre class="r"><code>distance &lt;- miles_to_km(20)
+print(distance)</code></pre>
+<pre><code>## [1] 32.1868</code></pre>
+<p>Not only is the repetition gone, but the code is easier to maintain
+this way. Should you wish to update e.g. a conversion rate Unlikely for
+miles to km, more likely for currencies etc.) it only needs to be done
+once, within the function, and not every time you perform a
+conversion.<br />
+Alternatively, you can define the conversion rate beforehand, like we
+did earlier. Either way, you’ll only have to change the rate once, which
+reduces the potential for errors.</p>
+</div>
+</div>
+<div id="bibliography" class="section level2">
+<h2>Bibliography</h2>
+<p>Mayer, C. (2022): The Art of Clean Code. San Francisco: No Starch
+Press, Inc.</p>
 </div>
 
 
