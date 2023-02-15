@@ -9,7 +9,13 @@ import re
 
 @dataclass
 class Document:
-    """ A representation of a Transkribus PAGE XML document. """
+    """ A representation of a Transkribus PAGE XML document.
+
+    :param file_path: the file path to the Transkribus PAGE XML document
+    :type file_path: InitVar
+    :param tree: the parsed Transkribus PAGE XML document, defaults to None
+    :type tree: etree._Element
+    """
 
     file_path: InitVar[str]
     tree: etree._Element = None
@@ -53,7 +59,11 @@ class Document:
 
 @dataclass
 class Text:
-    """ A representation of a Transkribus PAGE XML 'Text*' element.  """
+    """ A representation of a Transkribus PAGE XML 'Text*' element.
+
+    :param element: the Transkribus PAGE XML 'Text*' element
+    :type element: etree._Element
+    """
 
     element: etree._Element
 
