@@ -84,7 +84,7 @@ Switch offers a GitLab instance, c4science supports Git:
 
 GitHub repo for these slides: [https://github.com/RISE-UNIBAS/clean-code/git](https://github.com/RISE-UNIBAS/clean-code/tree/master/git)
 
-Image credits: [Alex Eylar, "Inception", CC BY-NA-SA 2.0](https://www.flickr.com/photos/hoyvinmayvin/4829301976).
+Image credit: [Alex Eylar, "Inception", CC BY-NA-SA 2.0](https://www.flickr.com/photos/hoyvinmayvin/4829301976).
 
 # Further reading
 

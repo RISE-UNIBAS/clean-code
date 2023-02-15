@@ -13,7 +13,7 @@ date: February 17, 2023
 Understand how using version control, clean code and documentation can be used to:
 
 - read and maintain your code
-- comply with [FAIR data principles](https://force11.org/info/the-fair-data-principles/) and [FAIR4RS principles](https://zenodo.org/record/6623556#.Y-uTsq2ZNaQ) (see [Barker et al. 2022](https://doi.org/10.1038/s41597-022-01710-x)) 
+- comply with [FAIR data principles](https://force11.org/info/the-fair-data-principles/) and [FAIR4RS principles](https://zenodo.org/record/6623556#.Y-uTsq2ZNaQ) (see also [Barker et al. 2022](https://doi.org/10.1038/s41597-022-01710-x)) 
 - avoid tech debt
 
 # Program

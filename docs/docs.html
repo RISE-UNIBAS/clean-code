@@ -49,17 +49,57 @@ title="&#39;An oil painting of a programmer cleaning code&#39; by Maximilian Hin
 <div id="why-is-documentation-important" class="slide section level1">
 <h1>Why is documentation important?</h1>
 <p>Without documentation your future self (let alone other people) won’t
-be able to easily read your code and your code won’t be FAIR. Apart from
-the time and money spent (re)understanding your code, this potentially
-means many missed out opportunities, including:</p>
+be able to easily read your code and your code won’t be FAIR (<a
+href="https://doi.org/10.15497/RDA00068">Chue Hong et al. 2022:
+13</a>):</p>
+<blockquote>
+<p>“Software, including its documentation and license, should meet
+domain-relevant community standards and coding practices (e.g., choice
+of programming language, standards for testing, usage of file formats,
+accessibility […]) that enable reuse.”</p>
+</blockquote>
+<p>In addition, apart from the time and money spent (re)understanding
+your undocumented code, this potentially means many missed out
+opportunities, including:</p>
 <ul class="incremental">
 <li>Publications (results not reproducible or black boxed)</li>
 <li>Collaboration</li>
 <li>Funding</li>
 </ul>
 </div>
-<div id="high-level-view" class="slide section level1">
-<h1>High-level view</h1>
+<div id="different-levels-of-documentation"
+class="slide section level1">
+<h1>Different levels of documentation</h1>
+<p><img src="images/documents.png"
+title="xkcd, &#39;Documents&#39;, CC BY-NA 2.5" /></p>
+<p>Documentation is required at different levels of your research
+project:</p>
+<ol class="incremental" style="list-style-type: decimal">
+<li>Project level</li>
+<li>User level</li>
+<li>Systems level</li>
+</ol>
+<p>Image credit: <a href="https://xkcd.com/1459/">xkcd, “Documents”, CC
+BY-NA 2.5</a>.</p>
+</div>
+<div id="project-level-documentation" class="slide section level1">
+<h1>Project level documentation</h1>
+<p>A readme file provides information about your files (code, data, and
+others) and how they are interrelated. The structure of a readme file
+should include:</p>
+<ul class="incremental">
+<li>General information</li>
+<li>File overview</li>
+<li>Sharing and access information</li>
+<li>Methodological information</li>
+<li>File-specific information</li>
+</ul>
+<p><a
+href="https://researchdata.unibas.ch/en/planning/data-organisation/">RDMN
+provides more resources on data and file organization</a>.</p>
+</div>
+<div id="user-level-documentation" class="slide section level1">
+<h1>User level documentation</h1>
 <p>“IEEE Standard for Software User Documentation” in IEEE Std
 1063-1987: 1-20, <a
 href="10.1109/IEEESTD.1988.121943">10.1109/IEEESTD.1988.121943</a>.</p>
@@ -72,6 +112,21 @@ following questions:</p>
 <li>What is the usage mode of the documentation?</li>
 </ol>
 </div>
+<div id="systems-level-documentation-with-python"
+class="slide section level1">
+<h1>Systems level documentation with Python</h1>
+<h2 id="docstrings">Docstrings</h2>
+<h2 id="annotations">Annotations</h2>
+</div>
+<div id="automatic-formatting" class="slide section level1">
+<h1>Automatic formatting</h1>
+</div>
+<div id="documenting-versus-commenting" class="slide section level1">
+<h1>Documenting versus commenting</h1>
+</div>
+<div id="sphinx" class="slide section level1">
+<h1>Sphinx</h1>
+</div>
 <div id="example-in-python-implementation-side-if-you-will"
 class="slide section level1">
 <h1>Example in Python (implementation side if you will)</h1>
@@ -80,8 +135,6 @@ class="slide section level1">
 <li>docstrings</li>
 <li>hints/annotations</li>
 <li>documentation with sphinx</li>
-<li>readme</li>
-<li>file structure</li>
 </ul>
 </div>
 <div id="test" class="slide section level1">
