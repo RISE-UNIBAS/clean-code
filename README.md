@@ -15,7 +15,7 @@ The file structure mirrors the outline of the course:
 - Introduction in [`clean-code/intro`](https://github.com/RISE-UNIBAS/clean-code/tree/main/intro)
 - Version control with Git in [`clean-code/git`](https://github.com/RISE-UNIBAS/clean-code/tree/main/git)
 - Materials on documentation in [`clean-code/git`](https://github.com/RISE-UNIBAS/clean-code/tree/main/docs)
-- Materials on clean code in [`clean-code/git`](https://github.com/RISE-UNIBAS/clean-code/tree/main/clean)
+- Materials on clean code in [`clean-code/clean`](https://github.com/RISE-UNIBAS/clean-code/tree/main/clean)
 
 ## To dos
 
