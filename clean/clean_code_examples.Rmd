@@ -3,8 +3,8 @@ title: "Clean Code Examples"
 author: "Anthea Alberto"
 date: "2023-02-17"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 
 ```{r echo = F, message = F}
