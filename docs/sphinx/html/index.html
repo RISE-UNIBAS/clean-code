@@ -42,35 +42,7 @@
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Welcome to Sample Code’s documentation!</a><ul>
-<li><a class="reference internal" href="#sample_code.Document"><code class="docutils literal notranslate"><span class="pre">Document</span></code></a><ul>
-<li><a class="reference internal" href="#sample_code.Document.get_tags"><code class="docutils literal notranslate"><span class="pre">Document.get_tags()</span></code></a></li>
-<li><a class="reference internal" href="#sample_code.Document.get_text_regions"><code class="docutils literal notranslate"><span class="pre">Document.get_text_regions()</span></code></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#sample_code.Line"><code class="docutils literal notranslate"><span class="pre">Line</span></code></a><ul>
-<li><a class="reference internal" href="#sample_code.Line.get_baseline_points"><code class="docutils literal notranslate"><span class="pre">Line.get_baseline_points()</span></code></a></li>
-<li><a class="reference internal" href="#sample_code.Line.get_coords_points"><code class="docutils literal notranslate"><span class="pre">Line.get_coords_points()</span></code></a></li>
-<li><a class="reference internal" href="#sample_code.Line.get_custom"><code class="docutils literal notranslate"><span class="pre">Line.get_custom()</span></code></a></li>
-<li><a class="reference internal" href="#sample_code.Line.get_reading_order"><code class="docutils literal notranslate"><span class="pre">Line.get_reading_order()</span></code></a></li>
-<li><a class="reference internal" href="#sample_code.Line.get_tags"><code class="docutils literal notranslate"><span class="pre">Line.get_tags()</span></code></a></li>
-<li><a class="reference internal" href="#sample_code.Line.get_text"><code class="docutils literal notranslate"><span class="pre">Line.get_text()</span></code></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#sample_code.Region"><code class="docutils literal notranslate"><span class="pre">Region</span></code></a><ul>
-<li><a class="reference internal" href="#sample_code.Region.get_text_lines"><code class="docutils literal notranslate"><span class="pre">Region.get_text_lines()</span></code></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#sample_code.Tag"><code class="docutils literal notranslate"><span class="pre">Tag</span></code></a><ul>
-<li><a class="reference internal" href="#sample_code.Tag.get_csv_row"><code class="docutils literal notranslate"><span class="pre">Tag.get_csv_row()</span></code></a></li>
-<li><a class="reference internal" href="#sample_code.Tag.get_parameters"><code class="docutils literal notranslate"><span class="pre">Tag.get_parameters()</span></code></a></li>
-<li><a class="reference internal" href="#sample_code.Tag.get_tagged_string"><code class="docutils literal notranslate"><span class="pre">Tag.get_tagged_string()</span></code></a></li>
-<li><a class="reference internal" href="#sample_code.Tag.set_continued_tagged_string"><code class="docutils literal notranslate"><span class="pre">Tag.set_continued_tagged_string()</span></code></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#sample_code.Text"><code class="docutils literal notranslate"><span class="pre">Text</span></code></a><ul>
-<li><a class="reference internal" href="#sample_code.Text.get_id"><code class="docutils literal notranslate"><span class="pre">Text.get_id()</span></code></a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#sample_code.load_json"><code class="docutils literal notranslate"><span class="pre">load_json()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
@@ -102,200 +74,19 @@
              
   <section id="module-sample_code">
 <span id="welcome-to-sample-code-s-documentation"></span><h1>Welcome to Sample Code’s documentation!<a class="headerlink" href="#module-sample_code" title="Permalink to this heading"></a></h1>
-<p>Document, Text, and Tag dataclasses.</p>
-<dl class="py class">
-<dt class="sig sig-object py" id="sample_code.Document">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sample_code.</span></span><span class="sig-name descname"><span class="pre">Document</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tree</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.Document" title="Permalink to this definition"></a></dt>
-<dd><p>A representation of a Transkribus PAGE XML document.</p>
+<p>Sample code.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="sample_code.load_json">
+<span class="sig-prename descclassname"><span class="pre">sample_code.</span></span><span class="sig-name descname"><span class="pre">load_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.load_json" title="Permalink to this definition"></a></dt>
+<dd><p>Load a JSON object from file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>file_path</strong> (<em>InitVar</em>) – the file path to the Transkribus PAGE XML document</p></li>
-<li><p><strong>tree</strong> (<em>etree._Element</em>) – the parsed Transkribus PAGE XML document, defaults to None</p></li>
-</ul>
-</dd>
-</dl>
-<dl class="py method">
-<dt class="sig sig-object py" id="sample_code.Document.get_tags">
-<span class="sig-name descname"><span class="pre">get_tags</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.Document.get_tags" title="Permalink to this definition"></a></dt>
-<dd><p>Get all textual tags from the document.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<a class="reference internal" href="#sample_code.Tag" title="sample_code.Tag"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tag</span></code></a>]]</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="sample_code.Document.get_text_regions">
-<span class="sig-name descname"><span class="pre">get_text_regions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.Document.get_text_regions" title="Permalink to this definition"></a></dt>
-<dd><p>Get all ‘TextRegion’ elements of the document.</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="sample_code.Line">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sample_code.</span></span><span class="sig-name descname"><span class="pre">Line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.Line" title="Permalink to this definition"></a></dt>
-<dd><p>A representation of a Transkribus PAGE XML ‘TextLine’ element.</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="sample_code.Line.get_baseline_points">
-<span class="sig-name descname"><span class="pre">get_baseline_points</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.Line.get_baseline_points" title="Permalink to this definition"></a></dt>
-<dd><p>Get ‘points’ attribute from ‘Baseline’ subelement.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="sample_code.Line.get_coords_points">
-<span class="sig-name descname"><span class="pre">get_coords_points</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.Line.get_coords_points" title="Permalink to this definition"></a></dt>
-<dd><p>Get ‘points’ attribute from ‘Coords’ subelement.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="sample_code.Line.get_custom">
-<span class="sig-name descname"><span class="pre">get_custom</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.Line.get_custom" title="Permalink to this definition"></a></dt>
-<dd><p>Get ‘custom’ attribute.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="sample_code.Line.get_reading_order">
-<span class="sig-name descname"><span class="pre">get_reading_order</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.Line.get_reading_order" title="Permalink to this definition"></a></dt>
-<dd><p>Get reading order.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="sample_code.Line.get_tags">
-<span class="sig-name descname"><span class="pre">get_tags</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.Line.get_tags" title="Permalink to this definition"></a></dt>
-<dd><p>Get textual tags.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<a class="reference internal" href="#sample_code.Tag" title="sample_code.Tag"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tag</span></code></a>]]</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="sample_code.Line.get_text">
-<span class="sig-name descname"><span class="pre">get_text</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.Line.get_text" title="Permalink to this definition"></a></dt>
-<dd><p>Get text from ‘Unicode’ sub-subelement (subelement of ‘TextEquiv’).</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="sample_code.Region">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sample_code.</span></span><span class="sig-name descname"><span class="pre">Region</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.Region" title="Permalink to this definition"></a></dt>
-<dd><p>A representation of a Transkribus PAGE XML ‘TextRegion’ element.</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="sample_code.Region.get_text_lines">
-<span class="sig-name descname"><span class="pre">get_text_lines</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.Region.get_text_lines" title="Permalink to this definition"></a></dt>
-<dd><p>Get all ‘TextLine’ elements of the document.</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="sample_code.Tag">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sample_code.</span></span><span class="sig-name descname"><span class="pre">Tag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raw</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">continued_tagged_string</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_region_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_line_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_line_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_line_coords_points</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_line_baseline_points</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.Tag" title="Permalink to this definition"></a></dt>
-<dd><p>A representation of a Transkribus textual tag.</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="sample_code.Tag.get_csv_row">
-<span class="sig-name descname"><span class="pre">get_csv_row</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">header</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.Tag.get_csv_row" title="Permalink to this definition"></a></dt>
-<dd><p>Get tag as CSV row serialization.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>header</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – the CSV header</p>
+<dd class="field-odd"><p><strong>file_path</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – path to file including extension</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</p>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
 </dd>
 </dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="sample_code.Tag.get_parameters">
-<span class="sig-name descname"><span class="pre">get_parameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.Tag.get_parameters" title="Permalink to this definition"></a></dt>
-<dd><p>Get dictionary of tag’s parameters (offset, length, continued, and other custom ones).</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="sample_code.Tag.get_tagged_string">
-<span class="sig-name descname"><span class="pre">get_tagged_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.Tag.get_tagged_string" title="Permalink to this definition"></a></dt>
-<dd><p>Get the tagged string.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>text</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – the text</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="sample_code.Tag.set_continued_tagged_string">
-<span class="sig-name descname"><span class="pre">set_continued_tagged_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">continued_tagged_string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.Tag.set_continued_tagged_string" title="Permalink to this definition"></a></dt>
-<dd><p>Set combined tagged string.</p>
-<p>A continued tagged string is the concatenation of two tagged strings if the tags have parameter
-‘continued’ both set to ‘true’ and are adjacent in the PAGE XML document.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>continued_tagged_string</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – the combined tagged string</p>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="sample_code.Text">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sample_code.</span></span><span class="sig-name descname"><span class="pre">Text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.Text" title="Permalink to this definition"></a></dt>
-<dd><p>A representation of a Transkribus PAGE XML ‘Text*’ element.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>element</strong> (<em>etree._Element</em>) – the Transkribus PAGE XML ‘Text*’ element</p>
-</dd>
-</dl>
-<dl class="py method">
-<dt class="sig sig-object py" id="sample_code.Text.get_id">
-<span class="sig-name descname"><span class="pre">get_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sample_code.Text.get_id" title="Permalink to this definition"></a></dt>
-<dd><p>Get ‘id’ attribute.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
-</dd>
-</dl>
-</dd></dl>
-
 </dd></dl>
 
 <div class="toctree-wrapper compound">
