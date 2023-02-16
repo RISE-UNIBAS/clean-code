@@ -49,14 +49,14 @@ title="&#39;An oil painting of a programmer cleaning code&#39; by Maximilian Hin
 <div id="why-is-documentation-important" class="slide section level1">
 <h1>Why is documentation important?</h1>
 <p>Without documentation your future self (let alone other people) won’t
-be able to easily read your code and your code won’t be FAIR (<a
-href="https://doi.org/10.15497/RDA00068">Chue Hong et al. 2022:
-13</a>):</p>
+be able to easily read your code and your code won’t be FAIR :</p>
 <blockquote>
 <p>“Software, including its documentation and license, should meet
 domain-relevant community standards and coding practices (e.g., choice
 of programming language, standards for testing, usage of file formats,
-accessibility […]) that enable reuse.”</p>
+accessibility […]) that enable reuse” (<a
+href="https://doi.org/10.15497/RDA00068">Chue Hong et al. 2022:
+13</a>).</p>
 </blockquote>
 <p>In addition, apart from the time and money spent (re)understanding
 your undocumented code, this potentially means many missed out
@@ -115,53 +115,107 @@ following questions:</p>
 <div id="systems-level-documentation-with-python"
 class="slide section level1">
 <h1>Systems level documentation with Python</h1>
-<h2 id="docstrings">Docstrings</h2>
-<h2 id="annotations">Annotations</h2>
+<p>Documentation of modules, classes, methods, functions.</p>
+<pre><code># import json
+from json import load
+# function to load a json file
+def foo(x):
+    with open(x, encoding=&quot;utf-8&quot;) as file: return load(file) # return type is dict</code></pre>
 </div>
 <div id="automatic-formatting" class="slide section level1">
 <h1>Automatic formatting</h1>
+<p>Avoid personal preferences for formatting and stick to the community
+standard <a href="https://peps.python.org/pep-0008/">PEP 8 “Style Guide
+for Python Code”</a>. Many IDEs offer integrated automic formatting.</p>
+<pre><code># import json
+from json import load
+
+
+# function to load a json file
+def foo(x):
+    with open(x, encoding=&quot;utf-8&quot;) as file: 
+        return load(file)  # returned object type is dict</code></pre>
 </div>
 <div id="documenting-versus-commenting" class="slide section level1">
 <h1>Documenting versus commenting</h1>
+<blockquote>
+<p>“As a general rule, we should <em>aim to have as few code comments as
+possible</em>. This means that if we make an effort to use the right
+abstractions, and we name things clearly, then comments shouldn’t be
+needed. [This opinion] agrees pretty much with the rest of the
+literature on software engineering: comments in code are a symptom of
+our inability to express our code correctly” (Anaya 2020: 10).</p>
+</blockquote>
+<p>The relevant exception is to point out some technical nuance or
+similar that should not pass unnoticed (and perhaps prototyping).</p>
+<pre><code>from json import load
+
+
+def load_json(file_path):
+    with open(file_path, encoding=&quot;utf-8&quot;) as file:
+        return load(file)</code></pre>
 </div>
-<div id="sphinx" class="slide section level1">
-<h1>Sphinx</h1>
-</div>
-<div id="example-in-python-implementation-side-if-you-will"
-class="slide section level1">
-<h1>Example in Python (implementation side if you will)</h1>
-<ul class="incremental">
-<li>documenting versus commenting</li>
-<li>docstrings</li>
-<li>hints/annotations</li>
-<li>documentation with sphinx</li>
-</ul>
-</div>
-<div id="test" class="slide section level1">
-<h1>test</h1>
-<pre><code>class Client:
-    &quot;&quot;&quot; Standalone client.
-    :param gold_standard: the gold standard, defaults to None
-    :param model_dir: the directory of the custom NER model, defaults to None
-    :param model: the loaded custom NER model, defaults to None
+<div id="docstrings" class="slide section level1">
+<h1>Docstrings</h1>
+<blockquote>
+<p>“In simple terms, we can say that docstrings are documentation
+embedded in the source code. A docstring is basically a literal string,
+placed somewhere in the code to document that part of logic” (Anaya
+2020: 10).</p>
+</blockquote>
+<p>Modules, classes, methods, or functions can have docstrings. See <a
+href="https://peps.python.org/pep-0257/">PEP 257 “Docstring
+Conventions”</a> for more details.</p>
+<pre><code>from json import load
+
+
+def load_json(file_path):
+    &quot;&quot;&quot; Load a JSON object from file.
+
+    :param file_path: path to file including extension
     &quot;&quot;&quot;
 
-    def __init__(self,
-                 gold_standard: GoldStandard = None,
-                 model_dir: TemporaryDirectory = None,
-                 model: Language = None,
-                 input_text: DataFrame = None,
-                 result: DataFrame = None,
-                 ) -&gt; None:
-        self.gold_standard = gold_standard
-        self.model_dir = model_dir
-        self.model = model
-        self.input_text = input_text
-        self.result = result
-        self.setup()</code></pre>
+    with open(file_path, encoding=&quot;utf-8&quot;) as file:
+        return load(file)</code></pre>
 </div>
-<div id="further-reading" class="slide section level1">
-<h1>Further reading</h1>
+<div id="type-hints" class="slide section level1">
+<h1>Type hints</h1>
+<p>Standard way to use type hints is via annotations:</p>
+<blockquote>
+<p>“The basic idea of [annotations] is to hint to the readers of the
+code about what to expect as values of arguments in functions […] and
+the expected type of the returned value of the function” (Anaya 2020:
+12).</p>
+</blockquote>
+<p>Type hints can also be used to automatically check type consistency.
+See <a href="https://peps.python.org/pep-0484/">PEP 484 “Type Hints”</a>
+for more details.</p>
+<pre><code>from json import load
+
+
+def load_json(file_path: str) -&gt; dict:
+    &quot;&quot;&quot; Load a JSON object from file.
+
+    :param file_path: path to file including extension
+    &quot;&quot;&quot;
+
+    with open(file_path, encoding=&quot;utf-8&quot;) as file:
+        return load(file)</code></pre>
+</div>
+<div id="automatically-generate-user-documentation-with-sphinx"
+class="slide section level1">
+<h1>Automatically generate (user) documentation with Sphinx</h1>
+<blockquote>
+<p>“Sphinx is far and away the most popular Python documentation tool.
+Use it. It converts reStructuredText markup language into a range of
+output formats including HTML, LaTeX (for printable PDF versions),
+manual pages, and plain text” (Reitz and Schlusser 2016: 88).</p>
+</blockquote>
+<p><img src="images/sphinx.png"
+title="Documentation created with Sphinx" /></p>
+</div>
+<div id="references-and-further-reading" class="slide section level1">
+<h1>References and further reading</h1>
 </div>
 </body>
 </html>
