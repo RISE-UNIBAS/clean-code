@@ -145,13 +145,14 @@ def load_json(file_path: str) -> dict:
 
 # Automatically generate (user) documentation with Sphinx
 
-> "Sphinx is far and away the most popular Python documentation tool. Use it. It converts reStructuredText markup language into a range of output formats including HTML, LaTeX (for printable PDF versions), manual pages, and plain text" (Reitz and Schlusser 2016: 88).
+> "Sphinx is far and away the most popular Python documentation tool. Use it. It converts reStructuredText markup language into a range of output formats including HTML, LaTeX (for printable PDF versions), manual pages, and plain text" (Reitz &cd Schlusser 2016: 88).
 
  ![](images/sphinx.png "Documentation created with Sphinx")
  
 # References and further reading
 
 - Mariano Anaya (2022): Clean Code in Python. Develop maintainable and efficient code, Packt Publishing
+- Chue Hong et al. (2022): "FAIR Principles for Research Software (FAIR4RS Principles) (1.0)", [https://doi.org/10.15497/RDA00068](https://doi.org/10.15497/RDA00068)
 - [Kenneth Reitz and Tanya Schlusser (2016): The Hitchhiker's Guide to Python. Best Practices for Development, O'Reilly](https://docs.python-guide.org/)
 - [PEP 8 "Style Guide for Python Code"](https://peps.python.org/pep-0008/)
 - [PEP 257 "Docstring Conventions"](https://peps.python.org/pep-0257/)
