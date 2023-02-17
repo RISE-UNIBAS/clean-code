@@ -19,7 +19,7 @@ The file structure mirrors the outline of the course:
 
 ## To dos
 
-- [✓] Create release for course on February 17, 2023
+- [x] Create release for course on February 17, 2023
 
 ## License
 
