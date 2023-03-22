@@ -1,6 +1,7 @@
 cff-version: 1.2.0
 title: RISE-UNIBAS/clean-code
-message: 'If you use this dataset, please cite it as below.'
+message: 'If you use this lesson, please cite it as below.'
+type: lesson
 authors:
   - family-names: Alberto
     given-names: Anthea
