@@ -2,6 +2,8 @@
 
 Training materials and slides for a crash course on version control, clean code and documentation with practical examples and exercises in Python and R.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7760315.svg)](https://doi.org/10.5281/zenodo.7760315)
+
 ## Creator
 
 This dataset was created by the University of Basel's Research and Infrastructure Support RISE (rise@unibas.ch) in 2023. 
