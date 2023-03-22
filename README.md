@@ -1,6 +1,6 @@
 # Version control, clean code and documentation
 
-Training materials and slides.
+Training materials and slides for a crash course on version control, clean code and documentation with practical examples and exercises in Python and R.
 
 ## Creator
 
