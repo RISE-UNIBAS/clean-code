@@ -1,7 +1,6 @@
 cff-version: 1.2.0
 title: RISE-UNIBAS/clean-code
 message: 'If you use this dataset, please cite it as below.'
-type: dataset
 authors:
   - family-names: Alberto
     given-names: Anthea
@@ -9,6 +8,13 @@ authors:
   - family-names: Hindermann
     given-names: Maximilian
     orcid: 'https://orcid.org/0000-0002-9337-4655'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.7760314
+    description: All versions
+  - type: doi
+    value: 10.5281/zenodo.7760315
+    description: Version 0.1.1
 url: 'https://github.com/RISE-UNIBAS/clean-code'
 abstract: >-
   Training materials and slides for a crash course on
