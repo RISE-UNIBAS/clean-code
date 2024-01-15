@@ -1,27 +1,23 @@
 # Version control, clean code and documentation
 
-Training materials and slides for a crash course on version control, clean code and documentation with practical examples and exercises in Python and R.
+Training materials and slides for courses on version control, clean code and documentation with practical examples and exercises in Python and R.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7760315.svg)](https://doi.org/10.5281/zenodo.7760315)
 
 ## Creator
 
-This dataset was created by the University of Basel's Research and Infrastructure Support RISE (rise@unibas.ch) in 2023. 
+These materials were created by the University of Basel's Research and Infrastructure Support RISE (rise@unibas.ch) in 2023 and 2024. 
 
 ## File structure and overview
 
-Note that there are [different versions of this dataset](https://github.com/RISE-UNIBAS/clean-code/releases).
+Note that there are [different versions of this dataset](https://github.com/RISE-UNIBAS/clean-code/releases), see the [changelog](https://github.com/RISE-UNIBAS/clean-code/blob/main/CHANGELOG.md)  for details.
 
-The file structure mirrors the outline of the course:
+File structure:
 
-- Introduction in [`clean-code/intro`](https://github.com/RISE-UNIBAS/clean-code/tree/main/intro)
-- Version control with Git in [`clean-code/git`](https://github.com/RISE-UNIBAS/clean-code/tree/main/git)
-- Materials on documentation in [`clean-code/docs`](https://github.com/RISE-UNIBAS/clean-code/tree/main/docs)
-- Materials on clean code in [`clean-code/clean`](https://github.com/RISE-UNIBAS/clean-code/tree/main/clean)
-
-## To dos
-
-- [x] Create release for course on February 17, 2023
+- Crash course on version control, clean code and documentation in 
+[`clean-code/crash-course`](https://github.com/RISE-UNIBAS/clean-code/tree/main/crash-course).
+- Course on version control, clean code and documentation in 
+[`clean-code/course`](https://github.com/RISE-UNIBAS/clean-code/tree/main/course).
 
 ## License
 
