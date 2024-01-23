@@ -29,7 +29,7 @@ one_speech
 length(page_href)
 
 df1 <- data.frame()
-for (i in c(1:47)) {
+for (i in c(1:48)) {
   url_one <- paste0("https://www.admin.ch", page_href[i])
   message(url_one)
   text <- read_html(url_one) %>%
@@ -44,7 +44,7 @@ View(df1)
 
 
 df1 <- data.frame()
-for (i in c(1:8)) {
+for (i in c(1:9)) {
   url_one <- paste0("https://www.admin.ch", page_href[i])
   message(url_one)
   text <- read_html(url_one) %>%
@@ -55,7 +55,7 @@ for (i in c(1:8)) {
 }
 
 df2 <- data.frame()
-for (i in c(9:47)) {
+for (i in c(10:48)) {
   url_one <- paste0("https://www.admin.ch", page_href[i])
   message(url_one)
   text <- read_html(url_one) %>%
