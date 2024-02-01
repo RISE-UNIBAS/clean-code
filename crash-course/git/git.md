@@ -82,7 +82,7 @@ Switch offers a GitLab instance, c4science supports Git:
 
 ![](images/inception.png "Alex Eylar, 'Inception', CC BY-NA-SA 2.0")
 
-GitHub repo for these slides: [https://github.com/RISE-UNIBAS/clean-code/git](https://github.com/RISE-UNIBAS/clean-code/tree/main/git)
+GitHub repo for these slides: [https://github.com/RISE-UNIBAS/clean-code/tree/main/crash-course/git](https://github.com/RISE-UNIBAS/clean-code/tree/main/crash-course/git)
 
 Image credit: [Alex Eylar, "Inception", CC BY-NA-SA 2.0](https://www.flickr.com/photos/hoyvinmayvin/4829301976).
 
