@@ -11,7 +11,7 @@
 
 <meta name="author" content="Anthea Alberto" />
 
-<meta name="date" content="2023-02-17" />
+<meta name="date" content="2024-02-05" />
 
 <title>Clean Code Examples</title>
 
@@ -352,7 +352,7 @@ display: none;
 
 <h1 class="title toc-ignore">Clean Code Examples</h1>
 <h4 class="author">Anthea Alberto</h4>
-<h4 class="date">2023-02-17</h4>
+<h4 class="date">2024-02-05</h4>
 
 </div>
 
@@ -412,11 +412,11 @@ make sense of code when variables, data frames and functions have
 descriptive names. To use an example from <em>The Art of Clean
 Code</em>, say you want to program a currency converter. The code in the
 chunk below is taken from <a href="https://stackoverflow.com/questions/61395512/function-to-convert-from-one-currency-to-another-currency-in-r">StackOverflow</a>
-(slightly amended to reflect conversion rates on Jan 3rd, 2023 and
+(slightly amended to reflect conversion rates on Feb 1st, 2024 and
 include CHF).</p>
 <pre class="r"><code>currencyCon &lt;- function(x, from = &quot;USD&quot;, to = &quot;EUR&quot;){
   # assign values: 1 usd in each currency 
-  values &lt;- c(1.000000, 0.945799, 0.831797, 130.411928, 0.934267)
+  values &lt;- c(1.000000, 0.9251461, 0.79111268, 146.84613, 0.86248175)
   # names attribute 
   names(values) &lt;- c(&quot;USD&quot;, &quot;EUR&quot;, &quot;GBP&quot;, &quot;YEN&quot;, &quot;CHF&quot;)
   # calculate (convert from into USD, and divide to)
@@ -424,24 +424,24 @@ include CHF).</p>
 }</code></pre>
 <pre class="r"><code># Testing 
 currencyCon(1, &quot;USD&quot;, &quot;EUR&quot;)</code></pre>
-<pre><code>##      EUR 
-## 0.945799</code></pre>
+<pre><code>##       EUR 
+## 0.9251461</code></pre>
 <pre class="r"><code>currencyCon(1, &quot;EUR&quot;, &quot;EUR&quot;)</code></pre>
 <pre><code>## EUR 
 ##   1</code></pre>
 <pre class="r"><code>currencyCon(1, &quot;GBP&quot;, &quot;YEN&quot;)</code></pre>
 <pre><code>##      YEN 
-## 156.7834</code></pre>
+## 185.6197</code></pre>
 <pre class="r"><code>currencyCon(100, &quot;CHF&quot;, &quot;USD&quot;)</code></pre>
 <pre><code>##      USD 
-## 107.0358</code></pre>
+## 115.9445</code></pre>
 <p><em>currencyCon</em> is a more meaningful name than just con() or
 fun() or something along those lines, because it concisely describes
 what the function does.<br />
 Now let’s say you want a simpler function that transforms USD to EUR.
 The way it is done in the chunk below works, but is not ideal:</p>
 <pre class="r"><code>dollar_to_euro &lt;- function(x){
-  x*0.945799
+  x*0.9251461
 }</code></pre>
 <p>First, the name is not unambiguous: <em>dollar</em> will likely be
 associated with USD in most of the world, but Canadians, Australians and
@@ -453,14 +453,14 @@ define things like conversion rates beforehand. This will make changing
 it later easier, because you won’t have to go through the entire
 function to find the number to adjust. For small functions like this
 one, it does not make much of a difference, however.</p>
-<pre class="r"><code>conv_rate &lt;- 0.945799
+<pre class="r"><code>conv_rate &lt;- 0.9251461
 
 usd_to_euro &lt;- function(x){
   x*conv_rate
 }
 
 usd_to_euro(1)</code></pre>
-<pre><code>## [1] 0.945799</code></pre>
+<pre><code>## [1] 0.9251461</code></pre>
 <p><em>conv_rate</em> is not exactly unambiguous, so the chunk above
 could be improved further still.</p>
 </div>

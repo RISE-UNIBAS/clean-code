@@ -1,7 +1,7 @@
 ---
 title: "Clean Code Examples"
 author: "Anthea Alberto"
-date: "2023-02-17"
+date: "2024-02-05"
 output:
   pdf_document: default
   html_document: default
@@ -9,7 +9,7 @@ output:
 
 ```{r echo = F, message = F}
 library(tidyverse)
-setwd("/Users/antheaalberto/switchdrive/Research and Infrastructure Support/Veranstaltungen/20230217_WWZ")
+setwd("/Users/antheaalberto/Documents/GitHub/clean-code/crash-course/clean")
 ```
 
 ## Principles of clean code
@@ -47,13 +47,13 @@ This is better! Giving the variables proper names makes the purpose of the code 
 
 ### Use the right names
 
-This principle is similar to the one above -- it's a lot easier to make sense of code when variables, data frames and functions have descriptive names. To use an example from *The Art of Clean Code*, say you want to program a currency converter. The code in the chunk below is taken from [StackOverflow](https://stackoverflow.com/questions/61395512/function-to-convert-from-one-currency-to-another-currency-in-r) (slightly amended to reflect conversion rates on Jan 3rd, 2023 and include CHF).
+This principle is similar to the one above -- it's a lot easier to make sense of code when variables, data frames and functions have descriptive names. To use an example from *The Art of Clean Code*, say you want to program a currency converter. The code in the chunk below is taken from [StackOverflow](https://stackoverflow.com/questions/61395512/function-to-convert-from-one-currency-to-another-currency-in-r) (slightly amended to reflect conversion rates on Feb 1st, 2024 and include CHF).
 
 ```{r}
 
 currencyCon <- function(x, from = "USD", to = "EUR"){
   # assign values: 1 usd in each currency 
-  values <- c(1.000000, 0.945799, 0.831797, 130.411928, 0.934267)
+  values <- c(1.000000, 0.9251461, 0.79111268, 146.84613, 0.86248175)
   # names attribute 
   names(values) <- c("USD", "EUR", "GBP", "YEN", "CHF")
   # calculate (convert from into USD, and divide to)
@@ -76,7 +76,7 @@ Now let's say you want a simpler function that transforms USD to EUR. The way it
 ```{r}
 
 dollar_to_euro <- function(x){
-  x*0.945799
+  x*0.9251461
 }
 ```
 
@@ -84,7 +84,7 @@ First, the name is not unambiguous: *dollar* will likely be associated with USD 
 Furthermore, it's discouraged to use numbers in functions, but rather define things like conversion rates beforehand. This will make changing it later easier, because you won't have to go through the entire function to find the number to adjust. For small functions like this one, it does not make much of a difference, however.
 
 ```{r}
-conv_rate <- 0.945799
+conv_rate <- 0.9251461
 
 usd_to_euro <- function(x){
   x*conv_rate

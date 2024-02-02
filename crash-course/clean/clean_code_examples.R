@@ -24,7 +24,7 @@ for (year in years) {
 
 currencyCon <- function(x, from = "USD", to = "EUR"){
   # assign values: 1 usd in each currency 
-  values <- c(1.000000, 0.945799, 0.831797, 130.411928, 0.934267)
+  values <- c(1.000000, 0.9251461, 0.79111268, 146.84613, 0.86248175)
   # names attribute 
   names(values) <- c("USD", "EUR", "GBP", "YEN", "CHF")
   # calculate (convert from into USD, and divide to)
@@ -38,10 +38,10 @@ currencyCon(1, "GBP", "YEN")
 currencyCon(100, "CHF", "USD")
 
 dollar_to_euro <- function(x){
-  x*0.945799
+  x*0.9251461
 }
 
-conv_rate <- 0.945799
+conv_rate <- 0.9251461
 
 usd_to_euro <- function(x){
   x*conv_rate
