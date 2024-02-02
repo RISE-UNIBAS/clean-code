@@ -8,12 +8,12 @@ date: February 17, 2023
 
 # Program
 
-- 0900-0915 Introduction
-- 0915-0945 Brief introduction to version control with Git
-- 0945-1030 Documentation with examples from Python
-- 1030-1100 Break
-- 1100-1230 Clean code with examples from R
-- 1230-1300 Q&A
+- 0830-0845 Introduction
+- 0845-0915 Brief introduction to version control with Git
+- 0915-1000 Documentation with examples from Python
+- 1000-1020 Break
+- 1020-1145 Clean code with examples from R
+- 1145-1200 Q&A
 
 # About us
 
