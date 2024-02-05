@@ -3,7 +3,7 @@ title: Brief introduction to version control with Git
 author: Dr. Maximilian Hindermann
 institute: RISE and UB
 theme: Metropolis
-date: February 17, 2023
+date: February 5, 2024
 ---
 
 # This section's goal
