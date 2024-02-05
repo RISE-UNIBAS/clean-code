@@ -91,7 +91,7 @@ print("Hello, world!")
 print("Hello, world!")
 
 for (i in 1:5) {
-  print("Hello, world!")  
+  print("Hello, world! How are you?")  
 }
 
 
