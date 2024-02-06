@@ -4,7 +4,7 @@ Please complete the following two tasks before March 1 and contact us in case of
 
 ## Configure your GitHub Pro account
 
-There is [difference in functionality](https://docs.github.com/en/get-started/learning-about-github/githubs-plans) between GitHub Free and GitHub Pro accounts. For example, GitHub Free accounts cannot use GitHub pages.
+There is a [difference in functionality](https://docs.github.com/en/get-started/learning-about-github/githubs-plans) between GitHub Free and GitHub Pro accounts. For example, GitHub Free accounts cannot use GitHub pages.
 
 ### Task 1
 As a student, you can get a free GitHub Pro account:
