@@ -16,6 +16,9 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.7760315
     description: Version 0.1.1
+  - type: doi
+    value: 10.5281/zenodo.10623276
+    description: Version 0.2.0
 url: 'https://github.com/RISE-UNIBAS/clean-code'
 abstract: >-
   Training materials and slides for courses on
