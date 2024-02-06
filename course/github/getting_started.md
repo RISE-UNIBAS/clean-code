@@ -1,5 +1,7 @@
 # Getting started with GitHub
 
+Instructions on what you need to do to follow the coursework.
+
 ## Configure your GitHub Pro account
 
 There is [difference in functionality](https://docs.github.com/en/get-started/learning-about-github/githubs-plans) between GitHub Free and GitHub Pro accounts. For example, GitHub Free accounts cannot use GitHub pages.
@@ -10,7 +12,7 @@ As a student, you can get a free GitHub Pro account:
 3. Fill in your [billing information](https://github.com/settings/billing/payment_information) with your full legal name as it appears on your academic affiliation documentation. (You do not have to add a payment method.)
 4. Go to https://education.github.com/benefits and get a free upgrade to GitHub Pro by following the prompts.
 
-## Interacting with GitHub
+## Connect to GitHub
 
 There are [various ways](https://docs.github.com/en/get-started/using-github/connecting-to-github#comparison-of-tools-for-connecting-to-github) in which you can interact with GitHub. In this course, we limit ourselves to the following:
 
