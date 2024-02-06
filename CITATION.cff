@@ -18,7 +18,7 @@ identifiers:
     description: Version 0.1.1
 url: 'https://github.com/RISE-UNIBAS/clean-code'
 abstract: >-
-  Training materials and slides for a crash course on
+  Training materials and slides for courses on
   version control, clean code and documentation with
   practical examples and exercises in Python and R.
 keywords:
@@ -31,5 +31,5 @@ keywords:
   - training materials
   - FAIR4RS
 license: CC-BY-4.0
-version: 0.1.1
-date-released: '2023-03-22'
+version: 0.2.0
+date-released: '2024-02-05'
