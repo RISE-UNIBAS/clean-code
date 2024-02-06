@@ -1,10 +1,12 @@
 # Getting started with GitHub
 
-Instructions on what you need to do to follow the coursework.
+Please complete the following two tasks before March 1 and contact us in case of problems. (We assume that you have completed these tasks if we don't hear from you and we won't have time during the course to fix any problems related to these two tasks.)
 
 ## Configure your GitHub Pro account
 
 There is [difference in functionality](https://docs.github.com/en/get-started/learning-about-github/githubs-plans) between GitHub Free and GitHub Pro accounts. For example, GitHub Free accounts cannot use GitHub pages.
+
+### Task 1
 As a student, you can get a free GitHub Pro account:
 
 1. Sign up at https://github.com/ with your university email and choose GitHub Free.
@@ -18,9 +20,12 @@ There are [various ways](https://docs.github.com/en/get-started/using-github/con
 
 1. On https://github.com/ via the web-interface in your browser.
 2. Using [GitHub Desktop](https://docs.github.com/en/desktop/overview/about-github-desktop).
-3. Using [PyCharm](https://www.jetbrains.com/pycharm/) or [RStudio](https://github.com/rstudio/rstudio) with GitHub integration (there are of course many more IDEs but we don't know them all well enough to offer support).
 
-If you're not using PyCharm or RStudio (or if you want a beginner friendly experience), you must install GitHub Desktop on your machine to be able to complete the coursework. 
+### Task 2
+
+Please install GitHub Desktop on your machine. 
+
+If you want to use your IDE instead of GitHub Desktop, you are free to do so, but we can only offer limit support, namely for [PyCharm](https://www.jetbrains.com/pycharm/) or [RStudio](https://github.com/rstudio/rstudio).
 
 ## Useful links
 
