@@ -3,7 +3,7 @@ title: Version Control, Clean Code and Documentation
 author: Dr. Anthea Alberto and Dr. Maximilian Hindermann
 institute: RISE and UB
 theme: Metropolis
-date: February 17, 2023
+date: February 5, 2024
 ---
 
 # Program

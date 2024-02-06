@@ -17,7 +17,7 @@ The file structure mirrors the outline of the course:
 
 ## Upcoming and past course dates
 
-- 2024-02-05: RISE Crash-course "Clean Code, Documentation & Version Control", WWZ | S14 | Peter Merian-Weg 6, Basel
+- 2024-02-05: RISE Crash-course "Clean Code, Documentation & Version Control", WWZ | S13 | Peter Merian-Weg 6, Basel
 - 2023-02-17: RISE Crash-course "Clean Code, Documentation & Version Control", WWZ | S14 | Peter Merian-Weg 6, Basel, [course details](https://wwz.unibas.ch/en/event/details/rise-crashcourse-on-clean-code-documentation-version-control/)
 
 ## To dos

@@ -3,7 +3,7 @@ title: Documentation
 author: Dr. Maximilian Hindermann
 institute: RISE and UB
 theme: Metropolis
-date: February 17, 2023
+date: February 5, 2024
 ---
 
 # Goal of this section on documentation
