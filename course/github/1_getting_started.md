@@ -30,3 +30,4 @@ If you want to use your IDE instead of GitHub Desktop, you are free to do so, bu
 ## Useful links
 
 - [GitHub documentation](https://docs.github.com)
+- [GitHub Desktop documentation](https://docs.github.com/en/desktop)
