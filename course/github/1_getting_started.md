@@ -18,8 +18,8 @@ As a student, you can get a free GitHub Pro account:
 
 There are [various ways](https://docs.github.com/en/get-started/using-github/connecting-to-github#comparison-of-tools-for-connecting-to-github) in which you can interact with GitHub. In this course, we limit ourselves to the following:
 
-1. On https://github.com/ via the web-interface in your browser.
-2. Using [GitHub Desktop](https://docs.github.com/en/desktop/overview/about-github-desktop).
+1. The web-interface on https://github.com/ in your browser.
+2. [GitHub Desktop](https://docs.github.com/en/desktop/overview/about-github-desktop).
 
 ### Task 2
 
