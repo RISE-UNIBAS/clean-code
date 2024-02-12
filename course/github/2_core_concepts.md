@@ -81,12 +81,14 @@ https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/propos
 - read the [documentation](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/deleting-and-restoring-branches-in-a-pull-request#deleting-a-branch-used-for-a-pull-request) on deleting branches with the web-interface
 - delete the "new"-branch with the web-interface
 
-## Task n: Commit to "x"-branch and push to remote with GitHub Desktop 
+# Optional tasks
+
+## Task 13: Commit to "x"-branch and push to remote with GitHub Desktop 
 - take some image, add it to "x"-branch, and push to remote with GitHub Desktop 
 
-## Task 13: clone repo x and make a pull request with a change to file y
+## Task 14: clone repo x and make a pull request with a change to file y
 
-## Task 14: review a pull request from x to your repo
+## Task 15: review a pull request from x to your repo
 
 # Useful links
 
