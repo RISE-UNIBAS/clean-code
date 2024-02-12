@@ -25,7 +25,7 @@ There are [various ways](https://docs.github.com/en/get-started/using-github/con
 
 Please install GitHub Desktop on your machine. 
 
-If you want to use your IDE instead of GitHub Desktop, you are free to do so, but we can only offer limit support, namely for [PyCharm](https://www.jetbrains.com/pycharm/) or [RStudio](https://github.com/rstudio/rstudio).
+If you want to use your IDE instead of GitHub Desktop, you are free to do so, but we can only offer limited support, namely for [PyCharm](https://www.jetbrains.com/pycharm/) or [RStudio](https://github.com/rstudio/rstudio).
 
 ## Useful links
 
