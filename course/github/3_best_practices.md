@@ -6,7 +6,6 @@ theme: Metropolis
 date: March 4, 2024
 ---
 
-
 # GitHub best practices
 
 ## Documentation and FAIR data
