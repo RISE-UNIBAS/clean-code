@@ -8,7 +8,7 @@ date: March 4, 2024
 
 # GitHub core concepts
 
-(Recall the distinction between Git and GitHub? Most of these are really Git core concepts.)
+<!-- Recall the distinction between Git and GitHub? Most of the core concepts discussed here are really Git core concepts. -->
 
 # Repository
 
@@ -28,7 +28,6 @@ _A commit, or "revision", is an individual change to a file (or set of files). W
 From [GitHub glossary/commit](https://docs.github.com/en/get-started/learning-about-github/github-glossary#commit)
 
 ## Task 4: Commit to a repository with the GitHub web-interface
-- https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits
 - add some text to the README file and commit the changes with the GitHub web-interface
 
 # Clone
