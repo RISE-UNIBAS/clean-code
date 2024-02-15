@@ -12,22 +12,30 @@ date: March 4, 2024
 
 # Repository
 
-https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories
+_A repository is the most basic element of GitHub. They're easiest to imagine as a project's folder. A repository contains all of the project files (including documentation), and stores each file's revision history. Repositories can have multiple collaborators and can be either public or private._
+
+From [GitHub glossary/repository](https://docs.github.com/en/get-started/learning-about-github/github-glossary#repository)
 
 ## Task 3: Create a repository on with the Github web-interface
+
 - read the [documentation](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop#cloning-a-repository) on how to create a new repository with the GitHub web-interface
 - create a new public "test"-repository and include a README file with the web-interface
 
 # Commit
 
-lorem
+_A commit, or "revision", is an individual change to a file (or set of files). When you make a commit to save your work, Git creates a unique ID (a.k.a. the "SHA" or "hash") that allows you to keep record of the specific changes committed along with who made them and when. Commits usually contain a commit message which is a brief description of what changes were made._
+
+From [GitHub glossary/commit](https://docs.github.com/en/get-started/learning-about-github/github-glossary#commit)
 
 ## Task 4: Commit to a repository with the GitHub web-interface
-- add some text to the README file and commit the changes
+- https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits
+- add some text to the README file and commit the changes with the GitHub web-interface
 
 # Clone
 
-lorem
+_A clone is a copy of a repository that lives on your computer instead of on a website's server somewhere, or the act of making that copy. When you make a clone, you can edit the files in your preferred editor and use Git to keep track of your changes without having to be online. The repository you cloned is still connected to the remote version so that you can push your local changes to the remote to keep them synced when you're online._
+
+From [GitHub glossary/clone](https://docs.github.com/en/get-started/learning-about-github/github-glossary#clone)
 
 ## Task 5: Sign in to GitHub Desktop
 - read the [documentation](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop#cloning-a-repository) on how to sign in to GitHub Desktop
@@ -39,7 +47,9 @@ lorem
 
 # Push
 
-lorem
+_To push means to send your committed changes to a remote repository on GitHub.com. For instance, if you change something locally, you can push those changes so that others may access them._
+
+From [GitHub glossary/push](https://docs.github.com/en/get-started/learning-about-github/github-glossary#push)
 
 ## Task 7: Push a commit to remote with GitHub Desktop
 - open the README file on the local "test"-repository, add some text, and save the file
@@ -49,7 +59,9 @@ lorem
 
 # Branches
 
-lorem
+_A branch is a parallel version of a repository. It is contained within the repository, but does not affect the primary or main branch allowing you to work freely without disrupting the "live" version. When you've made the changes you want to make, you can merge your branch back into the main branch to publish your changes._
+
+From [GitHub glossary/branch](https://docs.github.com/en/get-started/learning-about-github/github-glossary#branch)
 
 ## Task 8: Create a "new"-branch with the GitHub web-interface
 - read the [documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#creating-a-branch) on creating branches with the web-interface
@@ -61,7 +73,9 @@ lorem
 
 # Pull
 
-lorem
+_Pull refers to when you are fetching in changes and merging them. For instance, if someone has edited the remote file you're both working on, you'll want to pull in those changes to your local copy so that it's up to date._
+
+From [GitHub glossary/pull](https://docs.github.com/en/get-started/learning-about-github/github-glossary#pull)
 
 ## Task 10: Switch to "new"-branch with GitHub Desktop
 - read the [documentation](https://docs.github.com/en/desktop/making-changes-in-a-branch/managing-branches-in-github-desktop#switching-between-branches) on switching branches with GitHub Desktop
@@ -69,7 +83,9 @@ lorem
 
 # Merge and pull requests
 
-https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
+_Merging takes the changes from one branch (in the same repository or from a fork), and applies them into another. This often happens as a "pull request" (which can be thought of as a request to merge), or via the command line. A merge can be done through a pull request via the GitHub.com web interface if there are no conflicting changes, or can always be done via the command line._
+
+From [GitHub glossary/merge](https://docs.github.com/en/get-started/learning-about-github/github-glossary#merge)
 
 ## Task 11: Merge "new"-branch into main via a pull request
 - read the [documentation](https://docs.github.com/en/desktop/working-with-your-remote-repository-on-github-or-github-enterprise/creating-an-issue-or-pull-request-from-github-desktop#creating-a-pull-request) on creating a pull request with GitHub Desktop
