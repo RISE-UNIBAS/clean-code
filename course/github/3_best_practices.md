@@ -8,97 +8,97 @@ date: March 4, 2024
 
 # GitHub best practices
 
-# Documentation and FAIR data
+## Documentation and FAIR data
 <!-- Brief reminder about documentation and FAIR from crash course. -->
 Documentation and FAIR data principles are crucial in research for ensuring transparency, reproducibility, and efficiency. Documentation provides clear records of research processes, while FAIR principles (Findability, Accessibility, Interoperability, Reusability) ensure data is easily shared and used. These practices collectively enhance the integrity and impact of research.
 
-## README.md
+### README.md
 _You can add a README file to your repository to tell other people why
 your project is useful, what they can do with your project, and how they can use it._ 
 
 From the [GitHub documentation](https://docs.githubcom/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes) on README files
 
-### Materials
+#### Materials
 - The README file of this course is [here](https://github.com/RISE-UNIBAS/clean-code/blob/main/README.md).
-- README templates and suggestions on https://www.makeareadme.com/.
+- README templates and suggestions on [https://www.makeareadme.com/](https://www.makeareadme.com/).
 
-### Questions
+#### Questions
 - What is `.md` for a file type?
 - What should go into a README file? 
 - How many README files does one need?
 
-## LICENSE.md
+### LICENSE.md
 _Public repositories on GitHub are often used to share open source software. For your repository to truly be open source, you'll need to license it so that others are free to use, change, and distribute the software._
 
 From the [GitHub documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) on licensing a repository
 
-### Materials
+#### Materials
 - [Primer on intellectual property righs](https://researchdata.unibas.ch/en/legal-issues/intellectual-property-rights/) by the Research Data Management-Network University of Basel
-- Choose a license with https://choosealicense.com/.
+- Choose a license with [https://choosealicense.com/](https://choosealicense.com/).
 
-### Questions
+#### Questions
 - Why do you need a license for research software or research data?
 - What are suitable licenses in this context?
 
-## CITATION.cff
+### CITATION.cff
 _You can add a CITATION.cff file to the root of a repository to let others know how you would like them to cite your work. The citation file format is plain text with human- and machine-readable citation information._
 
 From the [GitHub documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files) on CITATION files
 
-### Materials
+#### Materials
 - The CITATION file of this course is [here](https://github.com/RISE-UNIBAS/clean-code/blob/main/CITATION.cff).
 - You can youse the [cffinit](https://citation-file-format.github.io/cff-initializer-javascript/#/) tool to create or update your CITATION file.
 
-### Questions
+#### Questions
 - What is an ORCID ID, what is a DOI?
 
-## Releases
+### Releases
 _GitHub's way of packaging and providing software to your users._
 
 From [GitHub glossary/release](https://docs.github.com/en/get-started/learning-about-github/github-glossary#release)
 
-### Materials
+#### Materials
 - The releases of this course are [here](https://github.com/RISE-UNIBAS/clean-code/releases).
 - Releases should adhere to [semantic versioning](https://semver.org/spec/v2.0.0.html).
 - [GitHub documentation](https://docs.github.com/en/repositories/releasing-projects-on-github) on releases.
 
-### Questions
+#### Questions
 - What do I put in the release notes?
 
-## Zenodo pipeline
+### Zenodo pipeline
 GitHub repositories can be published to [Zenodo](https://zenodo.org/) as releases. 
 
-### Materials
+#### Materials
 -  [GitHub documentation](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content#issuing-a-persistent-identifier-for-your-repository-with-zenodo) on issuing a persistent identifier for your repository with Zenodo-
-- A more detailed documentation is here.
+- A more detailed documentation is [here](zenodo_pipeline.md).
 
-## CHANGELOG.md
+### CHANGELOG.md
 _A changelog is a file which contains a curated, chronologically ordered list of notable changes for each version of a project._ 
 
-From https://keepachangelog.com/en/1.1.0/
+From [https://keepachangelog.com/en/1.1.0/](https://keepachangelog.com/en/1.1.0/)
 
-### Materials
+#### Materials
 - The CHANGELOG file of this course is [here](https://github.com/RISE-UNIBAS/clean-code/blob/main/CHANGELOG.md).
-- CHANGELOG templates and suggestions on https://keepachangelog.com/en/1.1.0/.
+- CHANGELOG templates and suggestions on [https://keepachangelog.com/en/1.1.0/](https://keepachangelog.com/en/1.1.0/).
 
-### Questions
+#### Questions
 - Why keep a changelog?
 - Who needs a changelog?
 
-## GitHub pages
+### GitHub pages
 
 https://docs.github.com/en/pages
 
 https://github.com/nicolas-van/easy-markdown-to-github-pages?tab=readme-ov-file
 
-# Security
+## Security
 
-## Secrets
+### Secrets
 
 - login credentials, API keys...
 - 
 
-# Collaboration
+## Collaboration
 
 - pull requests
 - branch protection
@@ -106,18 +106,18 @@ https://github.com/nicolas-van/easy-markdown-to-github-pages?tab=readme-ov-file
 - issues
 - project management tools
 
-# Automation
+## Automation
 
 - [Documentation](https://docs.github.com/en/actions) on GitHub actions
 
-# Getting help
+## Getting help
 
 - Documentation (see links below)
 - Google is your friend
 - [Stackoverflow](https://stackoverflow.com/)
 - GPTs
 
-# Useful links
+## Useful links
 
 - [GitHub glossary](https://docs.github.com/en/get-started/learning-about-github/github-glossary#commit)
 - [GitHub documentation](https://docs.github.com)
