@@ -9,8 +9,7 @@ include:
   - LICENSE.md
   - COPYING.md
   - CODE_OF_CONDUCT.md
-  - CONTRIBUTING.md
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
   - CHANGELOG.md
-remote_theme: pages-themes/tactile@v0.2.0
+remote_theme: pages-themes/minimal@v0.2.0
