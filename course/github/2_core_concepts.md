@@ -1,11 +1,3 @@
----
-title: Git(Hub) core concepts
-author: Dr. Maximilian Hindermann
-institute: RISE and UB
-theme: Metropolis
-date: March 4, 2024
----
-
 # Git(Hub) core concepts
 
 <!-- Recall the distinction between Git and GitHub? Most of the core concepts discussed here are really Git core concepts. -->

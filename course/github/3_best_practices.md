@@ -1,15 +1,7 @@
----
-title: GitHub best practices
-author: Dr. Maximilian Hindermann
-institute: RISE and UB
-theme: Metropolis
-date: March 4, 2024
----
-
 # GitHub best practices
 
-[!WARNING]
-If your data contains personal data you may not use GitHub (neither public nor private repositories), see the [primer on personal rights issues](https://researchdata.unibas.ch/en/legal-issues/personal-rights/) by the University of Basel's Research Data Management-Network for more information.
+> [!WARNING]
+> If your data contains personal data you may not use GitHub (neither public nor private repositories), see the [primer on personal rights issues](https://researchdata.unibas.ch/en/legal-issues/personal-rights/) by the University of Basel's Research Data Management-Network for more information.
 
 ## Documentation and FAIR data
 <!-- Brief reminder about documentation and FAIR from crash course. -->
