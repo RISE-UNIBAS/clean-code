@@ -8,6 +8,9 @@ date: March 4, 2024
 
 # GitHub best practices
 
+[!WARNING]
+If your data contains personal data you may not use GitHub (neither public nor private repositories), see the [primer on personal rights issues](https://researchdata.unibas.ch/en/legal-issues/personal-rights/) by the University of Basel's Research Data Management-Network for more information.
+
 ## Documentation and FAIR data
 <!-- Brief reminder about documentation and FAIR from crash course. -->
 Documentation and FAIR data principles are crucial in research for ensuring transparency, reproducibility, and efficiency. Documentation provides clear records of research processes, while FAIR principles (Findability, Accessibility, Interoperability, Reusability) ensure data is easily shared and used. These practices collectively enhance the integrity and impact of research.
@@ -33,7 +36,7 @@ _Public repositories on GitHub are often used to share open source software. For
 From the [GitHub documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) on licensing a repository
 
 #### Materials
-- [Primer on intellectual property righs](https://researchdata.unibas.ch/en/legal-issues/intellectual-property-rights/) by the Research Data Management-Network University of Basel
+- [Primer on intellectual property righs](https://researchdata.unibas.ch/en/legal-issues/intellectual-property-rights/) by the University of Basel's Research Data Management-Network.
 - Choose a license with [https://choosealicense.com/](https://choosealicense.com/).
 
 #### Questions
@@ -87,9 +90,16 @@ From [https://keepachangelog.com/en/1.1.0/](https://keepachangelog.com/en/1.1.0/
 
 ### GitHub pages
 
-https://docs.github.com/en/pages
+_A static site hosting service designed to host your personal, organization, or project pages directly from a GitHub repository._
 
-https://github.com/nicolas-van/easy-markdown-to-github-pages?tab=readme-ov-file
+From [GitHub glossary/GitHub pages](https://docs.github.com/en/get-started/learning-about-github/github-glossary#github-pages)
+
+#### Materials
+- [GitHub pages documentation](https://docs.github.com/de/pages).
+- [Guide](https://github.com/nicolas-van/easy-markdown-to-github-pages?tab=readme-ov-file) on how to turn Markdown files in your repo into a website.
+
+#### Questions
+- What's the advantage of having your documentation on GitHub pages?
 
 ## Security
 
