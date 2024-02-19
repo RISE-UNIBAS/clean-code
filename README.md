@@ -8,6 +8,10 @@ Training materials and slides for courses on version control, clean code and doc
 
 These materials were created by the University of Basel's Research and Infrastructure Support RISE (rise@unibas.ch) in 2023 and 2024. 
 
+## Documentation
+
+[Read this file on GitHub pages](https://rise-unibas.github.io/clean-code/).
+
 ## File structure and overview
 
 Note that there are [different versions of this course](https://github.com/RISE-UNIBAS/clean-code/releases), see the [changelog](https://github.com/RISE-UNIBAS/clean-code/blob/main/CHANGELOG.md)  for details.
@@ -15,9 +19,9 @@ Note that there are [different versions of this course](https://github.com/RISE-
 File structure:
 
 - Crash course on version control, clean code and documentation in 
-[`clean-code/crash-course`](https://github.com/RISE-UNIBAS/clean-code/tree/main/crash-course) and on [pages](course/README.md).
+[`clean-code/crash-course`](https://github.com/RISE-UNIBAS/clean-code/tree/main/crash-course), see the [README](crash-course/README.md).
 - Course on version control, clean code and documentation in 
-[`clean-code/course`](https://github.com/RISE-UNIBAS/clean-code/tree/main/course).
+[`clean-code/course`](https://github.com/RISE-UNIBAS/clean-code/tree/main/course), see the [README](course/README.md).
 
 ## License
 
