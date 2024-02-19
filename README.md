@@ -14,7 +14,7 @@ These materials were created by the University of Basel's Research and Infrastru
 
 ## File structure and overview
 
-Note that there are [different versions of this course](https://github.com/RISE-UNIBAS/clean-code/releases), see the [changelog](https://github.com/RISE-UNIBAS/clean-code/blob/main/CHANGELOG.md)  for details.
+Note that there are [different versions of this course](https://github.com/RISE-UNIBAS/clean-code/releases), see the [changelog](CHANGELOG.md)  for details.
 
 File structure:
 
