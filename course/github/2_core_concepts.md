@@ -98,12 +98,17 @@ From [GitHub glossary/merge](https://docs.github.com/en/get-started/learning-abo
 
 # Optional tasks
 
-## Task 13: Commit to "x"-branch and push to remote with GitHub Desktop 
-- take some image, add it to "x"-branch, and push to remote with GitHub Desktop 
+## Task 13: review a pull request
+- read the [documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews) on pull request reviews
+- pair up with one of your peers from this course
+- clone their "test"-repository
+- change a file and make a pull request
+- review their pull request to your "test"-repository
 
-## Task 14: clone repo x and make a pull request with a change to file y
-
-## Task 15: review a pull request from x to your repo
+## Task 14: create and resolve a merge conflict
+- read the [documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts) on merge conflicts
+- create a merge conflict in your "test"-repository
+- try to resolve the merge conflict
 
 # Useful links
 
