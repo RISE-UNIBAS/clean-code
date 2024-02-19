@@ -9,85 +9,81 @@ date: March 4, 2024
 # GitHub best practices
 
 # Documentation and FAIR data
-
 <!-- Brief reminder about documentation and FAIR from crash course. -->
 Documentation and FAIR data principles are crucial in research for ensuring transparency, reproducibility, and efficiency. Documentation provides clear records of research processes, while FAIR principles (Findability, Accessibility, Interoperability, Reusability) ensure data is easily shared and used. These practices collectively enhance the integrity and impact of research.
 
 ## README.md
+_You can add a README file to your repository to tell other people why
+your project is useful, what they can do with your project, and how they can use it._ 
 
-_You can add a README file to your repository to tell other people why your project is useful, what they can do with your project, and how they can use it._
+From the [GitHub documentation](https://docs.githubcom/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes) on README files
 
-From the [GitHub documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes) on README files. 
-
-The README file of this course is [here](https://github.com/RISE-UNIBAS/clean-code/blob/main/README.md).
+### Materials
+- The README file of this course is [here](https://github.com/RISE-UNIBAS/clean-code/blob/main/README.md).
+- README templates and suggestions on https://www.makeareadme.com/.
 
 ### Questions
 - What is `.md` for a file type?
-- What should go into a README file?
+- What should go into a README file? 
 - How many README files does one need?
 
 ## LICENSE.md
-
 _Public repositories on GitHub are often used to share open source software. For your repository to truly be open source, you'll need to license it so that others are free to use, change, and distribute the software._
 
-From the [GitHub documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) on licensing a repository.
+From the [GitHub documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) on licensing a repository
+
+### Materials
+- [Primer on intellectual property righs](https://researchdata.unibas.ch/en/legal-issues/intellectual-property-rights/) by the Research Data Management-Network University of Basel
+- Choose a license with https://choosealicense.com/.
 
 ### Questions
 - Why do you need a license for research software or research data?
 - What are suitable licenses in this context?
 
 ## CITATION.cff
-
 _You can add a CITATION.cff file to the root of a repository to let others know how you would like them to cite your work. The citation file format is plain text with human- and machine-readable citation information._
 
-From the [GitHub documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files) on CITATION files.
+From the [GitHub documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files) on CITATION files
 
-https://citation-file-format.github.io/cff-initializer-javascript/#/
+### Materials
+- The CITATION file of this course is [here](https://github.com/RISE-UNIBAS/clean-code/blob/main/CITATION.cff).
+- You can youse the [cffinit](https://citation-file-format.github.io/cff-initializer-javascript/#/) tool to create or update your CITATION file.
 
-https://github.com/RISE-UNIBAS/rheinschifffahrt-showcase/blob/master/CITATION.cff
+### Questions
+- What is an ORCID ID, what is a DOI?
 
 ## Releases
+_GitHub's way of packaging and providing software to your users._
 
-https://docs.github.com/en/repositories/releasing-projects-on-github
+From [GitHub glossary/release](https://docs.github.com/en/get-started/learning-about-github/github-glossary#release)
+
+### Materials
+- The releases of this course are [here](https://github.com/RISE-UNIBAS/clean-code/releases).
+- Releases should adhere to [semantic versioning](https://semver.org/spec/v2.0.0.html).
+- [GitHub documentation](https://docs.github.com/en/repositories/releasing-projects-on-github) on releases.
+
+### Questions
+- What do I put in the release notes?
 
 ## Zenodo pipeline
+GitHub repositories can be published to [Zenodo](https://zenodo.org/) as releases. 
 
-GitHub repositories can be published on [Zenodo](https://zenodo.org/) as releases. A new release produces a new version on Zenodo. The [documentation](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content#issuing-a-persistent-identifier-for-your-repository-with-zenodo) on issuing a persistent identifier for your repository with Zenodo is somewhat sparse. Here is a more explicit guide:
-
-### Steps required for initial release/publication
-
-Releases before integration with Zenodo are not relevant here.
-
-#### Setup GitHub
-- The repository must be public.
-- Metadata about the repository can be automatically pushed to Zenodo via a CITATION.cff file in the main node of the repository.
-- Note that your initial CITATION.cff file will not contain an "identifiers" section since the DOIs on Zenodo have not been created yet.
-- Note that "version" indictes the version of the release on GitHub which we may not have created yet.
-- Best practice is to add the ORCIDs of the authors, an abstract, and keywords (all of which will be displayed on Zenodo).
-
-#### Setup Zenodo
-- Create a Zenodo account and/or login with your GitHub account.
-- Make sure the repository you want to publish is enabled.
-
-#### Publish
-- Create and publish a release for the repository on GitHub.
-- On Zenodo, check that a repository with a DOI has been created (via Settings/GitHub or via Upload) for the release. 
-  - Via Edit, check that the metadata is correct (especially "Upload type").
-  - Add the repository to relevant communities.
-  - Save and then publish.
-- On GitHub, add the DOI-shield to the README.md file.
-
-#### Clean up
-- On GitHub, update the CITATION.cff with an "identifiers" section including a DOI of all versions and a DOI of the specific release.
-- On ORCID, add the publication to your account via Works/Add/Search & link/OpenAIRE Explore.
-
-### Steps required for each further release
-- Before the release, update CITATION.cff "version" with the target value.
-- After the release, add the new DOI to CITATION.cff "identifiers".
+### Materials
+-  [GitHub documentation](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content#issuing-a-persistent-identifier-for-your-repository-with-zenodo) on issuing a persistent identifier for your repository with Zenodo-
+- A more detailed documentation is here.
 
 ## CHANGELOG.md
+_A changelog is a file which contains a curated, chronologically ordered list of notable changes for each version of a project._ 
 
-https://keepachangelog.com/en/1.1.0/
+From https://keepachangelog.com/en/1.1.0/
+
+### Materials
+- The CHANGELOG file of this course is [here](https://github.com/RISE-UNIBAS/clean-code/blob/main/CHANGELOG.md).
+- CHANGELOG templates and suggestions on https://keepachangelog.com/en/1.1.0/.
+
+### Questions
+- Why keep a changelog?
+- Who needs a changelog?
 
 ## GitHub pages
 
