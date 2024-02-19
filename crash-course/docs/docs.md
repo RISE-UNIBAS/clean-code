@@ -40,7 +40,7 @@ Image credit: [xkcd, "Documents", CC BY-NA 2.5](https://xkcd.com/1459/).
 
 # Project level documentation
 
-A readme file provides information about your files (code, data, and others) and how they are interrelated. The University of Basel's RDMN provides more [resources on data and file organization](https://researchdata.unibas.ch/en/planning/data-organisation/). The structure of a readme file should include:
+A README file provides information about your files (code, data, and others) and how they are interrelated. The University of Basel's RDMN provides more [resources on data and file organization](https://researchdata.unibas.ch/en/planning/data-organisation/). The structure of a README file should include:
 
 - General information
 - File overview

@@ -17,17 +17,30 @@ Documentation and FAIR data principles are crucial in research for ensuring tran
 
 _You can add a README file to your repository to tell other people why your project is useful, what they can do with your project, and how they can use it._
 
-From [GitHub documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes) on READMEs
+From the [GitHub documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes) on README files. 
+
+The README file of this course is [here](https://github.com/RISE-UNIBAS/clean-code/blob/main/README.md).
+
+### Questions
+- What is `.md` for a file type?
+- What should go into a README file?
+- How many README files does one need?
 
 ## LICENSE.md
 
-https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository
+_Public repositories on GitHub are often used to share open source software. For your repository to truly be open source, you'll need to license it so that others are free to use, change, and distribute the software._
 
+From the [GitHub documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) on licensing a repository.
 
+### Questions
+- Why do you need a license for research software or research data?
+- What are suitable licenses in this context?
 
 ## CITATION.cff
 
-https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files
+_You can add a CITATION.cff file to the root of a repository to let others know how you would like them to cite your work. The citation file format is plain text with human- and machine-readable citation information._
+
+From the [GitHub documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files) on CITATION files.
 
 https://citation-file-format.github.io/cff-initializer-javascript/#/
 
