@@ -1,6 +1,6 @@
 # GitHub best practices
 
-> [!WARNING]
+> **Warning**
 > If your data contains personal data you may not use GitHub (neither public nor private repositories), see the [primer on personal rights issues](https://researchdata.unibas.ch/en/legal-issues/personal-rights/) by the University of Basel's Research Data Management-Network for more information.
 
 ## Documentation and FAIR data
