@@ -19,6 +19,7 @@ File structure:
 - Course on version control, clean code and documentation in 
 [`clean-code/course`](https://github.com/RISE-UNIBAS/clean-code/tree/main/course).
 - [test](https://github.com/RISE-UNIBAS/clean-code/blob/main/course/README.md) https://github.com/RISE-UNIBAS/clean-code/blob/main/course/README.md
+- [test2](/course/README.md)
 
 ## License
 
