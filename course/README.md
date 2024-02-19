@@ -9,7 +9,7 @@ These materials were created by the University of Basel's Research and Infrastru
 ## File structure
 
 The file structure mirrors the outline of the course:
-- Version control and documentation with GitHub in [`course/github`](https://github.com/RISE-UNIBAS/clean-code/tree/main/course/github)
+- [Version control and documentation with GitHub](course/github/README.md) in [`course/github`](https://github.com/RISE-UNIBAS/clean-code/tree/main/course/github)
 
 ## Upcoming and past course dates
 

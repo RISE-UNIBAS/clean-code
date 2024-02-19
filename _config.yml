@@ -13,3 +13,5 @@ include:
   - PULL_REQUEST_TEMPLATE.md
   - CHANGELOG.md
 remote_theme: pages-themes/minimal@v0.2.0
+logo: logo.png
+show_downloads: true
