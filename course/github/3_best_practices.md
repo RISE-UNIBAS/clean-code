@@ -89,6 +89,8 @@ From https://keepachangelog.com/en/1.1.0/
 
 https://docs.github.com/en/pages
 
+https://github.com/nicolas-van/easy-markdown-to-github-pages?tab=readme-ov-file
+
 # Security
 
 ## Secrets
