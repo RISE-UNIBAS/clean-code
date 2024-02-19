@@ -15,11 +15,9 @@ Note that there are [different versions of this course](https://github.com/RISE-
 File structure:
 
 - Crash course on version control, clean code and documentation in 
-[`clean-code/crash-course`](https://github.com/RISE-UNIBAS/clean-code/tree/main/crash-course).
+[`clean-code/crash-course`](https://github.com/RISE-UNIBAS/clean-code/tree/main/crash-course) and on [pages](course/README.md).
 - Course on version control, clean code and documentation in 
 [`clean-code/course`](https://github.com/RISE-UNIBAS/clean-code/tree/main/course).
-- [test](https://github.com/RISE-UNIBAS/clean-code/blob/main/course/README.md) https://github.com/RISE-UNIBAS/clean-code/blob/main/course/README.md
-- [test2](/course/README.md)
 
 ## License
 
