@@ -18,7 +18,7 @@ File structure:
 [`clean-code/crash-course`](https://github.com/RISE-UNIBAS/clean-code/tree/main/crash-course).
 - Course on version control, clean code and documentation in 
 [`clean-code/course`](https://github.com/RISE-UNIBAS/clean-code/tree/main/course).
-
+- [test](https://github.com/RISE-UNIBAS/clean-code/blob/main/course/README.md) https://github.com/RISE-UNIBAS/clean-code/blob/main/course/README.md
 ## License
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
