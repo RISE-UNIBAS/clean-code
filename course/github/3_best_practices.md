@@ -1,8 +1,5 @@
 # GitHub best practices
 
-> **Warning**
-> If your data contains personal data you may not use GitHub (neither public nor private repositories), see the [primer on personal rights issues](https://researchdata.unibas.ch/en/legal-issues/personal-rights/) by the University of Basel's Research Data Management-Network for more information.
-
 ## Documentation and FAIR data
 <!-- Brief reminder about documentation and FAIR from crash course. -->
 Documentation and FAIR data principles are crucial in research for ensuring transparency, reproducibility, and efficiency. Documentation provides clear records of research processes, while FAIR principles (Findability, Accessibility, Interoperability, Reusability) ensure data is easily shared and used. These practices collectively enhance the integrity and impact of research.
