@@ -29,7 +29,7 @@ _A clone is a copy of a repository that lives on your computer instead of on a w
 From [GitHub glossary/clone](https://docs.github.com/en/get-started/learning-about-github/github-glossary#clone)
 
 ### Task 5: Sign in to GitHub Desktop
-- read the [documentation](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop#cloning-a-repository) on how to sign in to GitHub Desktop
+- read the [documentation](https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/authenticating-to-github-in-github-desktop) on how to sign in to GitHub Desktop
 - sign in to GitHub Desktop
 
 ### Task 6: Clone a repository with GitHub Desktop
