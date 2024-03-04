@@ -10,7 +10,7 @@ From [GitHub glossary/repository](https://docs.github.com/en/get-started/learnin
 
 ### Task 3: Create a repository on with the Github web-interface
 
-- read the [documentation](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop#cloning-a-repository) on how to create a new repository with the GitHub web-interface
+- read the [documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository) on how to create a new repository with the GitHub web-interface
 - create a new public "test"-repository and include a README file with the web-interface
 
 ## Commit
