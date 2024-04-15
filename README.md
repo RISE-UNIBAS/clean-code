@@ -18,8 +18,10 @@ Note that there are [different versions of this course](https://github.com/RISE-
 
 File structure:
 
-- [Crash course on version control, clean code and documentation](crash-course/README.md) in 
+- [Crash-course on version control, clean code and documentation](crash-course/README.md) in 
 [`clean-code/crash-course`](https://github.com/RISE-UNIBAS/clean-code/tree/main/crash-course).
+- [Crash-course on version control and documentation with GitHub](crash-course/README.md) in 
+[`clean-code/crash-course-github`](https://github.com/RISE-UNIBAS/clean-code/tree/main/crash-course-github).
 - [Course on version control, clean code and documentation](course/README.md) in 
 [`clean-code/course`](https://github.com/RISE-UNIBAS/clean-code/tree/main/course).
 
