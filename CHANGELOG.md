@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Added [`clean-code/crash-course-github`](https://github.com/RISE-UNIBAS/clean-code/tree/main/crash-course-github) for new RISE crash-course "Version Control and Documentation with GitHub".
+
 ## [0.2.0] - 2024-02-05
 
 ### Added

@@ -95,7 +95,6 @@ From [GitHub glossary/GitHub pages](https://docs.github.com/en/get-started/learn
 ### Secrets
 
 - login credentials, API keys...
-- 
 
 ## Collaboration
 

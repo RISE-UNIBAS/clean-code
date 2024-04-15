@@ -13,7 +13,7 @@ The file structure mirrors the outline of the course:
 
 ## Upcoming and past course dates
 
-- 2024-04-10, 2024-04-11 and 2024-04-13: Course "Clean Code, Documentation & Version Control", WWZ / S16 / Peter Merian-Weg 6, Basel, [course details](https://vorlesungsverzeichnis.unibas.ch/en/home?id=283937)
+- 2024-04-10, 2024-04-11 and 2024-04-13: course "Clean Code, Documentation & Version Control", WWZ / S16 / Peter Merian-Weg 6, Basel, [course details](https://vorlesungsverzeichnis.unibas.ch/en/home?id=283937)
 
 ## License
 
