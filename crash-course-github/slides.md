@@ -355,19 +355,17 @@ From [GitHub glossary/GitHub pages](https://docs.github.com/en/get-started/learn
 
 # Advanced topics: secrets, collaboration, automation
 
-How to keep your data and credentials safe?
+- How to keep your data and credentials safe?
   - login credentials, API keys
-
-How to collaborate using GitHub?
+- How to collaborate using GitHub?
   - pull requests
   - branch protection
   - forking
   - issues
   - project management tools
 
-How to automate routine tasks or build data processing pipelines?
-
-- [Documentation](https://docs.github.com/en/actions) on GitHub actions
+- How to automate routine tasks or build data processing pipelines?
+  - [Documentation](https://docs.github.com/en/actions) on GitHub actions
 
 # Getting help
 
