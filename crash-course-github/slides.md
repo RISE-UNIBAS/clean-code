@@ -116,6 +116,32 @@ Image credit: [Alex Eylar, "Inception", CC BY-NA-SA 2.0](https://www.flickr.com/
 
 # Git(Hub) core concepts 
 
+# Configure your GitHub Pro account
+
+There is a [difference in functionality](https://docs.github.com/en/get-started/learning-about-github/githubs-plans) between GitHub Free and GitHub Pro accounts. For example, GitHub Free accounts cannot use GitHub pages.
+
+## Task 1
+As a student, you can get a free GitHub Pro account:
+
+1. Sign up at https://github.com/ with your university email and choose GitHub Free.
+2. [Verify](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/verifying-your-email-address) your email.
+3. Fill in your [billing information](https://github.com/settings/billing/payment_information) with your full legal name as it appears on your academic affiliation documentation. (You do not have to add a payment method.)
+4. Go to https://education.github.com/benefits and get a free upgrade to GitHub Pro by following the prompts.
+
+# Connect to GitHub
+
+There are [various ways](https://docs.github.com/en/get-started/using-github/connecting-to-github#comparison-of-tools-for-connecting-to-github) in which you can interact with GitHub. In this course, we limit ourselves to the following:
+
+1. The web-interface on https://github.com/ in your browser.
+2. [GitHub Desktop](https://docs.github.com/en/desktop/overview/about-github-desktop).
+
+## Task 2
+
+Please install GitHub Desktop on your machine. 
+
+If you want to use your IDE instead of GitHub Desktop, you are free to do so, but we can only offer limited support, namely for [PyCharm](https://www.jetbrains.com/pycharm/) or [RStudio](https://github.com/rstudio/rstudio).
+
+
 # Repository
 
 _A repository is the most basic element of GitHub. They're easiest to imagine as a project's folder. A repository contains all of the project files (including documentation), and stores each file's revision history. Repositories can have multiple collaborators and can be either public or private._
@@ -325,7 +351,7 @@ GitHub repositories can be published to [Zenodo](https://zenodo.org/) as release
 
 ## Materials
 -  [GitHub documentation](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content#issuing-a-persistent-identifier-for-your-repository-with-zenodo) on issuing a persistent identifier for your repository with Zenodo-
-- A more detailed documentation is [here](zenodo_pipeline.md).
+- A more detailed documentation is [here](https://github.com/RISE-UNIBAS/clean-code/tree/main/course/github/zenodo_pipeline.md).
 
 # CHANGELOG.md
 _A changelog is a file which contains a curated, chronologically ordered list of notable changes for each version of a project._ 
@@ -373,6 +399,7 @@ From [GitHub glossary/GitHub pages](https://docs.github.com/en/get-started/learn
 - Google is your friend
 - [Stackoverflow](https://stackoverflow.com/)
 - GPTs
+- rise@unibas.ch
 
 # References and further reading
 
