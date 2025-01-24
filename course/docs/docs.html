@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Dr. Maximilian Hindermann" />
+  <meta name="date" content="2024-02-05" />
+  <title>Documentation</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Documentation</h1>
+  <p class="author">
+Dr. Maximilian Hindermann
+  </p>
+  <p class="institute">
+RISE and UB
+  </p>
+  <p class="date">February 5, 2024</p>
+</div>
+<div id="goal-of-this-section-on-documentation"
+class="slide section level1">
+<h1>Goal of this section on documentation</h1>
+<p><img src="images/title_image.png"
+title="&#39;An oil painting of a programmer cleaning code&#39; by Maximilian Hindermann and DALLE-2" /></p>
+<p>Get you in a position to start writing great documentation.</p>
+</div>
+<div id="why-is-documentation-important" class="slide section level1">
+<h1>Why is documentation important?</h1>
+<p>Without documentation your future self (let alone other people) won’t
+be able to easily read your code and your code won’t be FAIR :</p>
+<blockquote>
+<p>“Software, including its documentation and license, should meet
+domain-relevant community standards and coding practices (e.g., choice
+of programming language, standards for testing, usage of file formats,
+accessibility […]) that enable reuse” (<a
+href="https://doi.org/10.15497/RDA00068">Chue Hong et al. 2022:
+13</a>).</p>
+</blockquote>
+<p>In addition, apart from the time and money spent (re)understanding
+your undocumented code, this potentially means many missed out
+opportunities, including:</p>
+<ul class="incremental">
+<li>Publications (results not reproducible or black boxed)</li>
+<li>Collaboration</li>
+<li>Funding</li>
+</ul>
+</div>
+<div id="different-levels-of-documentation"
+class="slide section level1">
+<h1>Different levels of documentation</h1>
+<p><img src="images/documents.png"
+title="xkcd, &#39;Documents&#39;, CC BY-NA 2.5" /></p>
+<p>Documentation is required at different levels of your research
+project:</p>
+<ol class="incremental" style="list-style-type: decimal">
+<li>Project level</li>
+<li>User level</li>
+<li>Systems level</li>
+</ol>
+<p>Image credit: <a href="https://xkcd.com/1459/">xkcd, “Documents”, CC
+BY-NA 2.5</a>.</p>
+</div>
+<div id="project-level-documentation" class="slide section level1">
+<h1>Project level documentation</h1>
+<p>A readme file provides information about your files (code, data, and
+others) and how they are interrelated. The University of Basel’s RDMN
+provides more <a
+href="https://researchdata.unibas.ch/en/planning/data-organisation/">resources
+on data and file organization</a>. The structure of a readme file should
+include:</p>
+<ul class="incremental">
+<li>General information</li>
+<li>File overview</li>
+<li>Sharing and access information</li>
+<li>Methodological information</li>
+<li>File-specific information</li>
+</ul>
+</div>
+<div id="user-level-documentation" class="slide section level1">
+<h1>User level documentation</h1>
+<p>“IEEE Standard for Software User Documentation” in IEEE Std
+1063-1987: 1-20, <a
+href="https://doi.org/10.1109/IEEESTD.1988.121943">10.1109/IEEESTD.1988.121943</a>.</p>
+<p>In order to create good user software documentation, answer the
+following questions:</p>
+<ol class="incremental" style="list-style-type: decimal">
+<li>What part(s) of the software need to be documented?</li>
+<li>Who is the audience of the documentation?</li>
+<li>What is the information required by the target audience?</li>
+<li>What is the usage mode of the documentation?</li>
+</ol>
+</div>
+<div id="systems-level-documentation-with-python"
+class="slide section level1">
+<h1>Systems level documentation with Python</h1>
+<p>Documentation of modules, classes, methods, functions.</p>
+<pre><code># import json
+from json import load
+# function to load a json file
+def foo(x):
+    with open(x, encoding=&quot;utf-8&quot;) as file: return load(file) # return type is dict</code></pre>
+</div>
+<div id="automatic-formatting" class="slide section level1">
+<h1>Automatic formatting</h1>
+<p>Avoid personal preferences for formatting and stick to the community
+standard <a href="https://peps.python.org/pep-0008/">PEP 8 “Style Guide
+for Python Code”</a>. Many IDEs offer integrated automic formatting.</p>
+<pre><code># import json
+from json import load
+
+
+# function to load a json file
+def foo(x):
+    with open(x, encoding=&quot;utf-8&quot;) as file: 
+        return load(file)  # returned object type is dict</code></pre>
+</div>
+<div id="documenting-versus-commenting" class="slide section level1">
+<h1>Documenting versus commenting</h1>
+<blockquote>
+<p>“As a general rule, we should <em>aim to have as few code comments as
+possible</em>. This means that if we make an effort to use the right
+abstractions, and we name things clearly, then comments shouldn’t be
+needed. [This opinion] agrees pretty much with the rest of the
+literature on software engineering: comments in code are a symptom of
+our inability to express our code correctly” (Anaya 2020: 10).</p>
+</blockquote>
+<p>The relevant exception is to point out some technical nuance or
+similar that should not pass unnoticed (and perhaps prototyping).</p>
+<pre><code>from json import load
+
+
+def load_json(file_path):
+    with open(file_path, encoding=&quot;utf-8&quot;) as file:
+        return load(file)</code></pre>
+</div>
+<div id="docstrings" class="slide section level1">
+<h1>Docstrings</h1>
+<blockquote>
+<p>“In simple terms, we can say that docstrings are documentation
+embedded in the source code. A docstring is basically a literal string,
+placed somewhere in the code to document that part of logic” (Anaya
+2020: 10).</p>
+</blockquote>
+<p>Modules, classes, methods, or functions can have docstrings. See <a
+href="https://peps.python.org/pep-0257/">PEP 257 “Docstring
+Conventions”</a> for more details.</p>
+<pre><code>from json import load
+
+
+def load_json(file_path):
+    &quot;&quot;&quot; Load a JSON object from file.
+
+    :param file_path: path to file including extension
+    &quot;&quot;&quot;
+
+    with open(file_path, encoding=&quot;utf-8&quot;) as file:
+        return load(file)</code></pre>
+</div>
+<div id="type-hints" class="slide section level1">
+<h1>Type hints</h1>
+<p>Standard way to use type hints is via annotations:</p>
+<blockquote>
+<p>“The basic idea of [annotations] is to hint to the readers of the
+code about what to expect as values of arguments in functions […] and
+the expected type of the returned value of the function” (Anaya 2020:
+12).</p>
+</blockquote>
+<p>Type hints can also be used to automatically check type consistency.
+See <a href="https://peps.python.org/pep-0484/">PEP 484 “Type Hints”</a>
+for more details.</p>
+<pre><code>from json import load
+
+
+def load_json(file_path: str) -&gt; dict:
+    &quot;&quot;&quot; Load a JSON object from file.
+
+    :param file_path: path to file including extension
+    &quot;&quot;&quot;
+
+    with open(file_path, encoding=&quot;utf-8&quot;) as file:
+        return load(file)</code></pre>
+</div>
+<div id="automatically-generate-user-documentation-with-sphinx"
+class="slide section level1">
+<h1>Automatically generate (user) documentation with Sphinx</h1>
+<blockquote>
+<p>“Sphinx is far and away the most popular Python documentation tool.
+Use it. It converts reStructuredText markup language into a range of
+output formats including HTML, LaTeX (for printable PDF versions),
+manual pages, and plain text” (Reitz &amp;cd Schlusser 2016: 88).</p>
+</blockquote>
+<p><img src="images/sphinx.png"
+title="Documentation created with Sphinx" /></p>
+</div>
+<div id="references-and-further-reading" class="slide section level1">
+<h1>References and further reading</h1>
+<ul class="incremental">
+<li>Mariano Anaya (2022): Clean Code in Python. Develop maintainable and
+efficient code, Packt Publishing</li>
+<li>Chue Hong et al. (2022): “FAIR Principles for Research Software
+(FAIR4RS Principles) (1.0)”, <a
+href="https://doi.org/10.15497/RDA00068">https://doi.org/10.15497/RDA00068</a></li>
+<li><a href="https://docs.python-guide.org/">Kenneth Reitz and Tanya
+Schlusser (2016): The Hitchhiker’s Guide to Python. Best Practices for
+Development, O’Reilly</a></li>
+<li><a href="https://peps.python.org/pep-0008/">PEP 8 “Style Guide for
+Python Code”</a></li>
+<li><a href="https://peps.python.org/pep-0257/">PEP 257 “Docstring
+Conventions”</a></li>
+<li><a href="https://peps.python.org/pep-0484/">PEP 484 “Type
+Hints”</a></li>
+</ul>
+</div>
+</body>
+</html>

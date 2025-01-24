@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Dr. Maximilian Hindermann" />
+  <meta name="date" content="2024-02-05" />
+  <title>Brief introduction to version control with Git</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Brief introduction to version control with Git</h1>
+  <p class="author">
+Dr. Maximilian Hindermann
+  </p>
+  <p class="institute">
+RISE and UB
+  </p>
+  <p class="date">February 5, 2024</p>
+</div>
+<div id="this-sections-goal" class="slide section level1">
+<h1>This section’s goal</h1>
+<p><img src="images/title_image.png"
+title="&#39;An expressive oil painting of a programmer failing to use Git&#39; by Maximilian Hindermann and DALLE-2" /></p>
+<p>Get you in a position to decide if Git might be useful for your
+work.</p>
+</div>
+<div id="what-is-git" class="slide section level1">
+<h1>What is Git?</h1>
+<ul class="incremental">
+<li>Git is a distributed version control system (VCS).</li>
+<li>A VCS is “a system that records changes to a file or set of files
+over time so that specific versions can be recalled later” (Chacon &amp;
+Straub 2014: 10).</li>
+<li>Git is very well suited for text-like data such as code, but of
+course also for text-like data such as:
+<ul class="incremental">
+<li>an ALTO-XML file encoding the transcript of a medieval
+manuscript</li>
+<li>a CSV file recording numerical weather data for Basel</li>
+<li>a JSON-LD file containing a Tropy database</li>
+<li>an SVG file of a research project’s fancy new logo</li>
+<li>a TXT file containing a novel from Project Gutenberg</li>
+</ul></li>
+<li>Git is less well suited for binary data such as audio data, images
+or video (changes in these files are opaque), especially if these files
+are large (&gt;100MB); use <a href="https://git-lfs.com/">Git Large File
+Storage extension</a>in such cases.</li>
+</ul>
+</div>
+<div id="local-version-control" class="slide section level1">
+<h1>Local version control</h1>
+<p><img src="images/local.png" title="Local version control" /></p>
+<ul class="incremental">
+<li>Solves the problem of error-prone manual versioning of files.</li>
+</ul>
+</div>
+<div id="centralized-version-control" class="slide section level1">
+<h1>Centralized version control</h1>
+<p><img src="images/centralized.png"
+title="Centralized version control" /></p>
+<ul class="incremental">
+<li>Solves the problem of how to work on the same files together on
+different computers.</li>
+</ul>
+</div>
+<div id="distributed-version-control" class="slide section level1">
+<h1>Distributed version control</h1>
+<p><img src="images/distributed.png"
+title="Distributed version control" /></p>
+<ul class="incremental">
+<li>Solves the problem of being dependent on central server for work and
+backup.</li>
+</ul>
+</div>
+<div id="using-git" class="slide section level1">
+<h1>Using Git</h1>
+<p><img src="images/use.png"
+title="Snapshots of Git used in a command line and an IDE" /></p>
+<p>After installation on your computer, you can use Git:</p>
+<ul class="incremental">
+<li>via the command line</li>
+<li>via one of many <a
+href="https://git-scm.com/downloads/guis">GUI-clients</a></li>
+<li>via most common IDEs</li>
+</ul>
+</div>
+<div id="git-repository-hosting-services" class="slide section level1">
+<h1>Git repository hosting services</h1>
+<p>But where do I host my Git repository? Do I have to configure a
+server myself?</p>
+<ul class="incremental">
+<li>No. In practice, most users rely on a commercial Git repository
+hosting service such as <a href="https://github.com/">GitHub</a>, <a
+href="https://gitlab.com/">GitLab</a>, <a
+href="https://bitbucket.org/">Bitbucket</a>, or others. <img
+src="images/logos.png"
+title="GitHub, GitLab and Bitbucket logos" /></li>
+<li>Git repository hosting services do not replace but extend Git!</li>
+</ul>
+</div>
+<div id="gitlab-at-unibas" class="slide section level1">
+<h1>GitLab at Unibas</h1>
+<p>In contrast to GitHub, GitLab can be installed on your own
+infrastructure (e.g., required for sensitive data).</p>
+<p>There are several GitLab instances at Unibas but none run as official
+university-wide service:</p>
+<ul class="incremental">
+<li><a
+href="https://git.scicore.unibas.ch/">https://git.scicore.unibas.ch/</a></li>
+<li><a
+href="https://gitlab.psychologie.unibas.ch/">https://gitlab.psychologie.unibas.ch/</a></li>
+<li><a
+href="https://gitlab.switch.ch/ub-unibas/">https://gitlab.switch.ch/ub-unibas/</a></li>
+<li><a
+href="https://gitlab.its.unibas.ch/">https://gitlab.its.unibas.ch/</a></li>
+</ul>
+</div>
+<div id="national-infrastructure" class="slide section level1">
+<h1>National infrastructure</h1>
+<p>Switch offers a GitLab instance, c4science supports Git:</p>
+<ul class="incremental">
+<li><a
+href="https://gitlab.switch.ch/">https://gitlab.switch.ch/</a></li>
+<li><a href="https://c4science.ch/">https://c4science.ch/</a></li>
+</ul>
+</div>
+<div id="looking-at-a-sample-github-repository"
+class="slide section level1">
+<h1>Looking at a sample GitHub repository</h1>
+<p><img src="images/inception.png"
+title="Alex Eylar, &#39;Inception&#39;, CC BY-NA-SA 2.0" /></p>
+<p>GitHub repo for these slides: <a
+href="https://github.com/RISE-UNIBAS/clean-code/tree/main/crash-course/git">https://github.com/RISE-UNIBAS/clean-code/tree/main/crash-course/git</a></p>
+<p>Image credit: <a
+href="https://www.flickr.com/photos/hoyvinmayvin/4829301976">Alex Eylar,
+“Inception”, CC BY-NA-SA 2.0</a>.</p>
+</div>
+<div id="further-reading" class="slide section level1">
+<h1>Further reading</h1>
+<p><img src="images/books.png"
+title="Selection of Git book covers" /></p>
+<ul class="incremental">
+<li><a href="https://git-scm.com/doc/ext">Tons of material online and in
+print</a></li>
+<li><a href="https://git-scm.com/book/en/v2">Scott Chacon and Ben Straub
+(2014): Pro Git, Apress</a></li>
+<li>Bernd Öggl and Michael Kofler (2022): Git. Projektverwaltung für
+Entwickler und DevOps-Teams, Rheinwerk Computing</li>
+</ul>
+</div>
+</body>
+</html>
