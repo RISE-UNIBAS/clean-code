@@ -4,7 +4,7 @@ Training materials and slides for a course on version control, clean code and do
 
 ## Creator
 
-These materials were created by the University of Basel's Research and Infrastructure Support RISE (rise@unibas.ch) in 2024. 
+These materials were created by the University of Basel's Research and Infrastructure Support RISE (rise@unibas.ch) in 2024 and 2025. 
 
 ## File structure
 
@@ -13,6 +13,7 @@ The file structure mirrors the outline of the course:
 
 ## Upcoming and past course dates
 
+- 2025-03-03, 2025-02-10 and 2025-02 12: course "Clean Code, Documentation & Version Control", WWZ / S16 / Peter Merian-Weg 6, Basel, [course details](https://vorlesungsverzeichnis.unibas.ch/en/course-directory?id=291288) 
 - 2024-04-10, 2024-04-11 and 2024-04-13: course "Clean Code, Documentation & Version Control", WWZ / S16 / Peter Merian-Weg 6, Basel, [course details](https://vorlesungsverzeichnis.unibas.ch/en/home?id=283937)
 
 ## License

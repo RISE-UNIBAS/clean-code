@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.abspath('..'))
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Sample Code'
-copyright = '2024, Maximilian Hindermann'
+copyright = '2025, Maximilian Hindermann'
 author = 'Maximilian Hindermann'
 
 # -- General configuration ---------------------------------------------------
