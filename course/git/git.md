@@ -1,11 +1,3 @@
----
-title: Brief introduction to version control with Git
-author: Dr. Maximilian Hindermann
-institute: RISE and UB
-theme: Metropolis
-date: February 3, 2025
----
-
 # This section's goal
 
 ![](images/title_image.png "'An expressive oil painting of a programmer failing to use Git' by Maximilian Hindermann and DALLE-2")
