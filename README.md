@@ -6,7 +6,7 @@ Training materials and slides for courses on version control, clean code and doc
 
 ## Creator
 
-These materials were created by the University of Basel's Research and Infrastructure Support RISE (rise@unibas.ch) in 2023 and 2024. 
+These materials were created by the University of Basel's Research and Infrastructure Support RISE (rise@unibas.ch) between 2023 and 2025. 
 
 ## Documentation
 
