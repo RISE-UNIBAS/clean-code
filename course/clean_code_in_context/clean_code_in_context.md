@@ -96,6 +96,7 @@ Instead of confusing names like `final_final_thisone`, consider: `v1`, `v2`, etc
 - If you mess up or want to do something differently, you won’t have to reload the data.
 
 <img width="1221" alt="simple_hierarchy" src="https://github.com/user-attachments/assets/54419935-167e-4ee8-aafc-1e4dcf879e36" />
+
 *Source: [Case studies from mitcommlab](https://github.com/mitcommlab/Coding-Documentation/blob/master/File-Structure-Case-Studies.md)*
 
 <!--![scripts_structure](https://github.com/user-attachments/assets/f3d4f5af-db89-40d5-ba80-c3099b2ac580) -->
@@ -119,7 +120,8 @@ Instead of confusing names like `final_final_thisone`, consider: `v1`, `v2`, etc
 
 ## R Markdown
 
-R Markdown is a tool to produce PDF or HTML documents with embedded code chunks. It is ideal for reports.
+- R Markdown is a tool to produce PDF or HTML documents with embedded code chunks. 
+- It is ideal for reports, for others or for yourself.
 
 ## Integrating GitHub with RStudio
 
