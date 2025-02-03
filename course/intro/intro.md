@@ -8,6 +8,8 @@ date: February 5, 2024
 
 # Program
 
+## Day 1
+
 - 08:30 Course introduction
 - 08:45 Brief introduction to version control with Git
 - 09:15 Introduction to documentation with examples from Python
@@ -22,6 +24,14 @@ date: February 5, 2024
 group work
 - 15:15-16:00 Clean coding with AI
 
+## Day 2
+
+- Discussion of the assignment
+- Variable program (improving repos, coding and documentation with AI,...)
+
+## Day 3
+
+- Bring your own data
 
 # About us
 
