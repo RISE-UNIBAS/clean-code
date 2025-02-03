@@ -9,6 +9,7 @@ These materials were created by the University of Basel's Research and Infrastru
 ## File structure
 
 The file structure mirrors the outline of the course:
+- [Introduction](intro/intro.md) in [`course/intro`](https://github.com/RISE-UNIBAS/clean-code/tree/main/course/intro)
 - [Introduction to Git](git/git.md) in [`course/git`](https://github.com/RISE-UNIBAS/clean-code/tree/main/course/git)
 - [Introduction to documentation with examples from Python](docs/docs.md) in [`course/docs`](https://github.com/RISE-UNIBAS/clean-code/tree/main/course/docs)
 - [Version control and documentation with GitHub](github/README.md) in [`course/github`](https://github.com/RISE-UNIBAS/clean-code/tree/main/course/github).
