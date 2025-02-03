@@ -97,7 +97,9 @@ Instead of confusing names like `final_final_thisone`, consider: `v1`, `v2`, etc
 
 <img width="1221" alt="simple_hierarchy" src="https://github.com/user-attachments/assets/54419935-167e-4ee8-aafc-1e4dcf879e36" />
 
-![scripts_structure](https://github.com/user-attachments/assets/f3d4f5af-db89-40d5-ba80-c3099b2ac580)
+*Source: [Case studies from mitcommlab](https://github.com/mitcommlab/Coding-Documentation/blob/master/File-Structure-Case-Studies.md)*
+
+<!--![scripts_structure](https://github.com/user-attachments/assets/f3d4f5af-db89-40d5-ba80-c3099b2ac580) -->
 
 
 ## File formats
@@ -105,30 +107,27 @@ Instead of confusing names like `final_final_thisone`, consider: `v1`, `v2`, etc
 - Strive to use universal formats across operating systems.
 - Recommend `.rtf` (text) and `.csv` (spreadsheets).
 
-## LaTeX
+### LaTeX
 
 - LaTeX is independent of OS.
 - The learning curve is steep, but worth it.
-- Recommend **Overleaf** for online editing.
+- I recommend [Overleaf](https://www.overleaf.com/) for online editing.
 
-## File encoding
+### File encoding
 
 - Use **UTF-8** encoding to solve internationalization issues.
 - Avoid special characters in names, which might cause issues.
 
 ## R Markdown
 
-R Markdown is a tool to produce PDF or HTML documents with embedded code chunks. It is ideal for reports.
+- R Markdown is a tool to produce PDF or HTML documents with embedded code chunks. 
+- It is ideal for reports, for others or for yourself.
 
 ## Integrating GitHub with RStudio
 
 Follow the [instructions here](https://happygitwithr.com/) for GitHub-RStudio integration. This integration allows making commits directly via RStudio.
 
-![GitHub-RStudio Integration](commit_from_rstudio.png)
-
-## Group Work
-
-In groups of 3, make a checklist of considerations for starting a new project. Include personal experiences and course insights to aid future projects.
+![commit_from_rstudio](https://github.com/user-attachments/assets/27021753-f960-42e1-9f63-884d8c84333d)
 
 ## Examples & Resources
 
