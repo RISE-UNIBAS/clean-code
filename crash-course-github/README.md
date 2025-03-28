@@ -4,7 +4,7 @@ Training materials and slides for a crash course on version control, clean code 
 
 ## Creator
 
-These materials were created by the University of Basel's Research and Infrastructure Support RISE (rise@unibas.ch) in 2024. 
+These materials were created by the University of Basel's Research and Infrastructure Support RISE (rise@unibas.ch) in 2024 and 2025. 
 
 ## File structure
 

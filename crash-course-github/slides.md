@@ -3,7 +3,7 @@ title: Version Control and Documentation with GitHub
 author: Dr. Maximilian Hindermann
 institute: RISE and UB
 theme: Metropolis
-date: April 19, 2024
+date: March 28, 2025
 ---
 
 # Program
