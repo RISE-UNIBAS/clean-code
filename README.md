@@ -2,7 +2,7 @@
 
 Training materials and slides for courses on version control, clean code and documentation with practical examples and exercises in Python and R.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10623276.svg)](https://doi.org/10.5281/zenodo.10623276)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15099964.svg)](https://doi.org/10.5281/zenodo.15099964)
 
 ## Creator
 
