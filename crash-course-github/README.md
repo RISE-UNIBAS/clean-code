@@ -8,13 +8,8 @@ These materials were created by the University of Basel's Research and Infrastru
 
 ## File structure
 
-The file structure mirrors the outline of the course:
-- slides as Markdown in [`crash-course-github/slides.md`](slides.md) 
-- slides as HTML in [`crash-course-github/slides.html`](https://github.com/RISE-UNIBAS/clean-code/tree/main/crash-course-github/slides.html)
+- slides as Markdown in [`crash-course-github/slides.md`](slides.md)
 - all images used in [`crash-course-github/images`](https://github.com/RISE-UNIBAS/clean-code/tree/main/crash-course-github/images)
-
-Pandoc was used to create HTML slides: `pandoc -s --webtex -i -t slidy in_file.md -o out_file.html`
-
 
 ## Upcoming and past course dates
 
