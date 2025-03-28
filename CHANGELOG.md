@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0] - 2025-03-28
+
 ### Added
 - Added [`clean-code/crash-course-github`](https://github.com/RISE-UNIBAS/clean-code/tree/main/crash-course-github) for new RISE crash-course "Version Control and Documentation with GitHub".
 
@@ -36,7 +38,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Materials for a crash-course entitled "Clean Code, Documentation & Version Control" at the University of Basel's Graduate School of Business and Economics (GSBE) on February 17, 2023.
 
-[unreleased]: https://github.com/RISE-UNIBAS/clean-code/compare/0.2.0...HEAD
+[unreleased]: https://github.com/RISE-UNIBAS/clean-code/compare/0.3.0...HEAD
+[0.3.0]: https://github.com/RISE-UNIBAS/clean-code/compare/0.2.0...0.3.0
 [0.2.0]: https://github.com/RISE-UNIBAS/clean-code/compare/0.1.1...0.2.0
 [0.1.1]: https://github.com/RISE-UNIBAS/clean-code/compare/0.1.0...0.1.1
 [0.1.0]: https://github.com/RISE-UNIBAS/clean-code/releases/tag/0.1.0
