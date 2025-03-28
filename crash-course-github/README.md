@@ -19,6 +19,7 @@ Pandoc was used to create HTML slides: `pandoc -s --webtex -i -t slidy in_file.m
 ## Upcoming and past course dates
 
 - 2024-04-19: RISE crash-course "Version Control and Documentation with GitHub", online
+- 2025-03-28: RISE crash-course "Version Control and Documentation with GitHub", online
 
 ## To dos
 
