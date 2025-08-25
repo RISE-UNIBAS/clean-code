@@ -12,7 +12,7 @@ Releases before integration with Zenodo are not relevant here.
 - The repository must be public.
 - Metadata about the repository can be automatically pushed to Zenodo via a CITATION.cff file in the main node of the repository.
 - Note that your initial CITATION.cff file will not contain an "identifiers" section since the DOIs on Zenodo have not been created yet.
-- Note that "version" indictes the version of the release on GitHub which we may not have created yet.
+- Note that "version" indicates the version of the release on GitHub which we may not have created yet.
 - Best practice is to add the ORCIDs of the authors, an abstract, and keywords (all of which will be displayed on Zenodo).
 
 ### Setup Zenodo
