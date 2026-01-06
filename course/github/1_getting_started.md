@@ -1,6 +1,6 @@
 # Getting started with GitHub
 
-Please complete the following two tasks before March 1 and contact us (rise@unibas.ch) in case of problems. (We assume that you have completed these tasks if we don't hear from you and we won't have time during the course to fix any problems related to these two tasks.)
+Please complete the following two tasks before January 12 and contact us (rise@unibas.ch) in case of problems. (We assume that you have completed these tasks if we don't hear from you and we won't have time during the course to fix any problems related to these two tasks.)
 
 ## Configure your GitHub Pro account
 
