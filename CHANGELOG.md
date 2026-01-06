@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- New AI-assisted coding session module in [`course/ai_tools`](https://github.com/RISE-UNIBAS/clean-code/tree/main/course/ai_tools) featuring Claude Code with PyCharm for refactoring and documentation (3-hour hands-on session with exercises).
+- Course overview sections with learning objectives and target audience information across all README files.
+
+### Changed
+- Comprehensive reorganization of course documentation with enhanced descriptions, detailed session schedules, and improved navigation.
+- Updated for 2026 course iteration with full 4-day program structure and timing details.
+- Enhanced main README to clearly differentiate course variants and highlight new AI-assisted coding content.
+
 ## [0.3.0] - 2025-03-28
 
 ### Added
