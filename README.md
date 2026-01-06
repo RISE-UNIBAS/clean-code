@@ -31,7 +31,7 @@ Comprehensive 4-day hands-on course (15+ hours) covering:
 - Git and GitHub fundamentals
 - Clean code principles and file organization
 - Documentation with Sphinx and docstrings
-- **AI-assisted coding with Claude Code and PyCharm** (new for 2026)
+- AI-assisted coding with Claude Code and PyCharm (new for 2026)
 - PyCharm integration and automated workflows
 - Research data publishing with GitHub-Zenodo
 
