@@ -2,20 +2,23 @@
 title: "WWZ Workshop: Clean Code in Context"
 author: "Dr. Anthea Alberto (RISE)"
 email: "antheajeanne.alberto@unibas.ch"
-date: "February 3, 2025"
+date: "January 19, 2026"
 ---
 
 # WWZ Workshop: Clean Code in Context
 
 ## Agenda
 
-- **13:00-13:30**: What is clean code and why should you use it?
-- **13:30-14:15**: File Structure, Data Formats and More
-- **14:15-14:30**: Break
-- **14:30-15:15**: Exercise
-- **15:15-16:00**: An intro to coding with AI
+- **09:00-10:15**: Introduction, core concepts of clean code and some best practices
+- **10:15-10:30**: Break
+- **10:30-11:15**: Some general input on cooperation and exercise
+- **11:15-12:00**: Buffer for technical setup
+- **12:00-13:00**: Lunch break
+- **13:00-16:00**: AI Tools for Coding
 
-## Recap Crash Course
+Slides can be found here: https://docs.google.com/presentation/d/1wf3FP_v7sqW1RSylroPCfVG85T3AHYlgoBkHe7cIsNQ/edit?usp=sharing 
+
+## An Introduction to Clean Code
 
 “I like my code to be **elegant and efficient.** The logic should be straightforward to make it hard for bugs to hide, the dependencies minimal to ease maintenance, error handling complete according to an articulated strategy, and performance close to optimal so as not to tempt people to make the code messy with unprincipled optimizations. **Clean code does one thing well.**”
 
@@ -129,9 +132,10 @@ Follow the [instructions here](https://happygitwithr.com/) for GitHub-RStudio in
 
 ![commit_from_rstudio](https://github.com/user-attachments/assets/27021753-f960-42e1-9f63-884d8c84333d)
 
-## Examples & Resources
-
-- [Showcase for teaching purposes](https://github.com/RISE-UNIBAS/rheinschifffahrt-showcase)
-- [Visualization project by RISE](https://github.com/RISE-UNIBAS/delille_viz)
+## Resources
+- [tidyverse style guide](https://style.tidyverse.org/)
+- [PEP 8 - Style Guide for Python Code](https://peps.python.org/pep-0008/)
+- [Project-oriented workflow](https://tidyverse.org/blog/2017/12/workflow-vs-script/) by Jenny Bryan
+- [Tips, tricks, and philosophies on computational work](https://cduvallet.github.io/phdchat-philosophies/) by Claire Duvallet
 
 ---
