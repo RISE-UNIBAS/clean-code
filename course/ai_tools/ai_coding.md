@@ -13,7 +13,7 @@ date: "January 19, 2026"
 - **13:00-13:30**: AI in research & coding landscape
 - **13:30-14:15**: Clean code with AI (hands-on exercises)
 - **14:15-14:30**: Break
-- **14:30-15:30**: Documentation with AI (live demo)
+- **14:30-15:30**: Claude Code for Documentation (live demo)
 - **15:30-16:00**: Best practices & discussion
 
 # Part 1: AI in Research (30 min)
@@ -27,12 +27,12 @@ date: "January 19, 2026"
 
 ## AI Tools Landscape
 
-| Type | Examples | Best For |
-|------|----------|----------|
-| **Code Completion** | GitHub Copilot, Tabnine | Real-time suggestions while typing |
-| **AI Agents** | Claude Code, Cursor | Full file/project refactoring |
-| **Conversational** | ChatGPT, Claude | Learning, explanations, debugging |
-| **APIs** | | Bulk requests | 
+| Type | Examples                  | Best For |
+|------|---------------------------|----------|
+| **Code Completion** | GitHub Copilot, Tabnine   | Real-time suggestions while typing |
+| **AI Agents** | Claude Code, Mistral Vibe | Full file/project refactoring |
+| **Conversational** | Le Chat, ChatGPT, Claude  | Learning, explanations, debugging |
+| **APIs** |                           | Bulk requests | 
 
 ## Common Research Use Cases
 
