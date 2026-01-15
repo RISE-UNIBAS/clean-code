@@ -26,6 +26,13 @@ x$Percent2 <- x$Percent*100
 x$diff <- x$Percent2-x$vote_share
 
 plot_final <- 
+  ggplot(x[x$seats>1,], aes(x=party_name_short, y=seats, fill=party_name_short)) + geom_col() + theme_minimal() +
+  labs(x="",
+       y="Sitze im Parlament",
+       title="Nationalratswahl 2019")
+plot_final
+
+plot_final <- 
   ggplot(x[x$seats>1,], aes(x=party_name_short, y=seats, fill=party_name_short)) + geom_col(show.legend = F) + theme_minimal() +
   labs(x="",
        y="Sitze im Parlament",
