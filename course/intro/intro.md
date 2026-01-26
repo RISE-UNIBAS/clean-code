@@ -87,11 +87,7 @@ By the end of this course, you will understand how to use version control, clean
 - 09:00 Recap & administration
 - 09:15 Students present their repositories
 - 10:15 Break
-- 10:30 GitHub and PyCharm integration
-- 11:00 Automated documentation with Sphinx
-  - Creating docstrings (with AI assistance if needed)
-  - Setting up Sphinx documentation
-- 11:30 GitHub-Zenodo integration for research data publication
+- 11:15 GitHub-Zenodo integration for research data publication
 - 12:00 Lunch and end of day
 
 **Materials**: [Documentation with Sphinx](../docs/docs.md) | [GitHub-Zenodo Pipeline](../github/zenodo_pipeline.md)
