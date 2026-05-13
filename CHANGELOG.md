@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.4.0] - 2026-05-13
 
 ### Added
 - New AI-assisted coding session module in [`course/ai_tools`](https://github.com/RISE-UNIBAS/clean-code/tree/main/course/ai_tools) featuring Claude Code with PyCharm for refactoring and documentation (3-hour hands-on session with exercises).
@@ -47,7 +47,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Materials for a crash-course entitled "Clean Code, Documentation & Version Control" at the University of Basel's Graduate School of Business and Economics (GSBE) on February 17, 2023.
 
-[unreleased]: https://github.com/RISE-UNIBAS/clean-code/compare/0.3.0...HEAD
+[unreleased]: https://github.com/RISE-UNIBAS/clean-code/compare/0.4.0...HEAD
+[0.4.0]: https://github.com/RISE-UNIBAS/clean-code/compare/0.3.0...0.4.0
 [0.3.0]: https://github.com/RISE-UNIBAS/clean-code/compare/0.2.0...0.3.0
 [0.2.0]: https://github.com/RISE-UNIBAS/clean-code/compare/0.1.1...0.2.0
 [0.1.1]: https://github.com/RISE-UNIBAS/clean-code/compare/0.1.0...0.1.1
